@@ -148,7 +148,7 @@ public final class ExportDataOperationMetadata extends com.google.protobuf.Gener
    *
    * <pre>
    * Output only. The name of dataset to be exported.
-   * "projects/&#42;&#47;datasets/&#42;&#47;Datasets/&#42;"
+   * "projects/&#42;&#47;datasets/&#42;"
    * </pre>
    *
    * <code>string dataset = 1;</code>
@@ -171,7 +171,7 @@ public final class ExportDataOperationMetadata extends com.google.protobuf.Gener
    *
    * <pre>
    * Output only. The name of dataset to be exported.
-   * "projects/&#42;&#47;datasets/&#42;&#47;Datasets/&#42;"
+   * "projects/&#42;&#47;datasets/&#42;"
    * </pre>
    *
    * <code>string dataset = 1;</code>
@@ -724,7 +724,7 @@ public final class ExportDataOperationMetadata extends com.google.protobuf.Gener
      *
      * <pre>
      * Output only. The name of dataset to be exported.
-     * "projects/&#42;&#47;datasets/&#42;&#47;Datasets/&#42;"
+     * "projects/&#42;&#47;datasets/&#42;"
      * </pre>
      *
      * <code>string dataset = 1;</code>
@@ -747,7 +747,7 @@ public final class ExportDataOperationMetadata extends com.google.protobuf.Gener
      *
      * <pre>
      * Output only. The name of dataset to be exported.
-     * "projects/&#42;&#47;datasets/&#42;&#47;Datasets/&#42;"
+     * "projects/&#42;&#47;datasets/&#42;"
      * </pre>
      *
      * <code>string dataset = 1;</code>
@@ -770,7 +770,7 @@ public final class ExportDataOperationMetadata extends com.google.protobuf.Gener
      *
      * <pre>
      * Output only. The name of dataset to be exported.
-     * "projects/&#42;&#47;datasets/&#42;&#47;Datasets/&#42;"
+     * "projects/&#42;&#47;datasets/&#42;"
      * </pre>
      *
      * <code>string dataset = 1;</code>
@@ -792,7 +792,7 @@ public final class ExportDataOperationMetadata extends com.google.protobuf.Gener
      *
      * <pre>
      * Output only. The name of dataset to be exported.
-     * "projects/&#42;&#47;datasets/&#42;&#47;Datasets/&#42;"
+     * "projects/&#42;&#47;datasets/&#42;"
      * </pre>
      *
      * <code>string dataset = 1;</code>
@@ -810,7 +810,7 @@ public final class ExportDataOperationMetadata extends com.google.protobuf.Gener
      *
      * <pre>
      * Output only. The name of dataset to be exported.
-     * "projects/&#42;&#47;datasets/&#42;&#47;Datasets/&#42;"
+     * "projects/&#42;&#47;datasets/&#42;"
      * </pre>
      *
      * <code>string dataset = 1;</code>

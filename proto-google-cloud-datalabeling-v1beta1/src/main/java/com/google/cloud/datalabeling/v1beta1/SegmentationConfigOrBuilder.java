@@ -31,7 +31,7 @@ public interface SegmentationConfigOrBuilder
    * projects/{project_id}/annotationSpecSets/{annotation_spec_set_id}
    * </pre>
    *
-   * <code>string annotation_spec_set = 1;</code>
+   * <code>string annotation_spec_set = 1 [(.google.api.field_behavior) = REQUIRED];</code>
    *
    * @return The annotationSpecSet.
    */
@@ -44,7 +44,7 @@ public interface SegmentationConfigOrBuilder
    * projects/{project_id}/annotationSpecSets/{annotation_spec_set_id}
    * </pre>
    *
-   * <code>string annotation_spec_set = 1;</code>
+   * <code>string annotation_spec_set = 1 [(.google.api.field_behavior) = REQUIRED];</code>
    *
    * @return The bytes for annotationSpecSet.
    */

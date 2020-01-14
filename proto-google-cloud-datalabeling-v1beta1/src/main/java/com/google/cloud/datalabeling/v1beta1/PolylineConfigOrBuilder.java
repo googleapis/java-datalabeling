@@ -30,7 +30,7 @@ public interface PolylineConfigOrBuilder
    * Required. Annotation spec set resource name.
    * </pre>
    *
-   * <code>string annotation_spec_set = 1;</code>
+   * <code>string annotation_spec_set = 1 [(.google.api.field_behavior) = REQUIRED];</code>
    *
    * @return The annotationSpecSet.
    */
@@ -42,7 +42,7 @@ public interface PolylineConfigOrBuilder
    * Required. Annotation spec set resource name.
    * </pre>
    *
-   * <code>string annotation_spec_set = 1;</code>
+   * <code>string annotation_spec_set = 1 [(.google.api.field_behavior) = REQUIRED];</code>
    *
    * @return The bytes for annotationSpecSet.
    */
@@ -55,7 +55,7 @@ public interface PolylineConfigOrBuilder
    * Optional. Instruction message showed on contributors UI.
    * </pre>
    *
-   * <code>string instruction_message = 2;</code>
+   * <code>string instruction_message = 2 [(.google.api.field_behavior) = OPTIONAL];</code>
    *
    * @return The instructionMessage.
    */
@@ -67,7 +67,7 @@ public interface PolylineConfigOrBuilder
    * Optional. Instruction message showed on contributors UI.
    * </pre>
    *
-   * <code>string instruction_message = 2;</code>
+   * <code>string instruction_message = 2 [(.google.api.field_behavior) = OPTIONAL];</code>
    *
    * @return The bytes for instructionMessage.
    */

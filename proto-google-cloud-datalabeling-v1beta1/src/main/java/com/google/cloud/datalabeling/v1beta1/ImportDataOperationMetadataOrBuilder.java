@@ -27,7 +27,7 @@ public interface ImportDataOperationMetadataOrBuilder
    *
    *
    * <pre>
-   * Ouptut only. The name of imported dataset.
+   * Output only. The name of imported dataset.
    * "projects/&#42;&#47;datasets/&#42;"
    * </pre>
    *
@@ -40,7 +40,7 @@ public interface ImportDataOperationMetadataOrBuilder
    *
    *
    * <pre>
-   * Ouptut only. The name of imported dataset.
+   * Output only. The name of imported dataset.
    * "projects/&#42;&#47;datasets/&#42;"
    * </pre>
    *

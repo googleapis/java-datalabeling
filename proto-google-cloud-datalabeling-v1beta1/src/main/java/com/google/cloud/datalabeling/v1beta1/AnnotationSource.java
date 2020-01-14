@@ -22,7 +22,8 @@ package com.google.cloud.datalabeling.v1beta1;
  *
  *
  * <pre>
- * Specifies where is the answer from.
+ * Specifies where the annotation comes from (whether it was provided by a
+ * human labeler or a different source).
  * </pre>
  *
  * Protobuf enum {@code google.cloud.datalabeling.v1beta1.AnnotationSource}

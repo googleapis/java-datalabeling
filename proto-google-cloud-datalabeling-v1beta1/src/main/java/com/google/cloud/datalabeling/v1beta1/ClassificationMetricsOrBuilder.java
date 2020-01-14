@@ -27,7 +27,8 @@ public interface ClassificationMetricsOrBuilder
    *
    *
    * <pre>
-   * Precision-recall curve.
+   * Precision-recall curve based on ground truth labels, predicted labels, and
+   * scores for the predicted labels.
    * </pre>
    *
    * <code>.google.cloud.datalabeling.v1beta1.PrCurve pr_curve = 1;</code>
@@ -39,7 +40,8 @@ public interface ClassificationMetricsOrBuilder
    *
    *
    * <pre>
-   * Precision-recall curve.
+   * Precision-recall curve based on ground truth labels, predicted labels, and
+   * scores for the predicted labels.
    * </pre>
    *
    * <code>.google.cloud.datalabeling.v1beta1.PrCurve pr_curve = 1;</code>
@@ -51,7 +53,8 @@ public interface ClassificationMetricsOrBuilder
    *
    *
    * <pre>
-   * Precision-recall curve.
+   * Precision-recall curve based on ground truth labels, predicted labels, and
+   * scores for the predicted labels.
    * </pre>
    *
    * <code>.google.cloud.datalabeling.v1beta1.PrCurve pr_curve = 1;</code>
@@ -59,17 +62,37 @@ public interface ClassificationMetricsOrBuilder
   com.google.cloud.datalabeling.v1beta1.PrCurveOrBuilder getPrCurveOrBuilder();
 
   /**
+   *
+   *
+   * <pre>
+   * Confusion matrix of predicted labels vs. ground truth labels.
+   * </pre>
+   *
    * <code>.google.cloud.datalabeling.v1beta1.ConfusionMatrix confusion_matrix = 2;</code>
    *
    * @return Whether the confusionMatrix field is set.
    */
   boolean hasConfusionMatrix();
   /**
+   *
+   *
+   * <pre>
+   * Confusion matrix of predicted labels vs. ground truth labels.
+   * </pre>
+   *
    * <code>.google.cloud.datalabeling.v1beta1.ConfusionMatrix confusion_matrix = 2;</code>
    *
    * @return The confusionMatrix.
    */
   com.google.cloud.datalabeling.v1beta1.ConfusionMatrix getConfusionMatrix();
-  /** <code>.google.cloud.datalabeling.v1beta1.ConfusionMatrix confusion_matrix = 2;</code> */
+  /**
+   *
+   *
+   * <pre>
+   * Confusion matrix of predicted labels vs. ground truth labels.
+   * </pre>
+   *
+   * <code>.google.cloud.datalabeling.v1beta1.ConfusionMatrix confusion_matrix = 2;</code>
+   */
   com.google.cloud.datalabeling.v1beta1.ConfusionMatrixOrBuilder getConfusionMatrixOrBuilder();
 }

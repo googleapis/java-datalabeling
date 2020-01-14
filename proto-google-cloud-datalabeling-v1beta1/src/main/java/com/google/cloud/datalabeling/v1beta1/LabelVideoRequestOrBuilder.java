@@ -210,7 +210,9 @@ public interface LabelVideoRequestOrBuilder
    * projects/{project_id}/datasets/{dataset_id}
    * </pre>
    *
-   * <code>string parent = 1;</code>
+   * <code>
+   * string parent = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+   * </code>
    *
    * @return The parent.
    */
@@ -223,7 +225,9 @@ public interface LabelVideoRequestOrBuilder
    * projects/{project_id}/datasets/{dataset_id}
    * </pre>
    *
-   * <code>string parent = 1;</code>
+   * <code>
+   * string parent = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+   * </code>
    *
    * @return The bytes for parent.
    */
@@ -236,7 +240,9 @@ public interface LabelVideoRequestOrBuilder
    * Required. Basic human annotation config.
    * </pre>
    *
-   * <code>.google.cloud.datalabeling.v1beta1.HumanAnnotationConfig basic_config = 2;</code>
+   * <code>
+   * .google.cloud.datalabeling.v1beta1.HumanAnnotationConfig basic_config = 2 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    *
    * @return Whether the basicConfig field is set.
    */
@@ -248,7 +254,9 @@ public interface LabelVideoRequestOrBuilder
    * Required. Basic human annotation config.
    * </pre>
    *
-   * <code>.google.cloud.datalabeling.v1beta1.HumanAnnotationConfig basic_config = 2;</code>
+   * <code>
+   * .google.cloud.datalabeling.v1beta1.HumanAnnotationConfig basic_config = 2 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    *
    * @return The basicConfig.
    */
@@ -260,7 +268,9 @@ public interface LabelVideoRequestOrBuilder
    * Required. Basic human annotation config.
    * </pre>
    *
-   * <code>.google.cloud.datalabeling.v1beta1.HumanAnnotationConfig basic_config = 2;</code>
+   * <code>
+   * .google.cloud.datalabeling.v1beta1.HumanAnnotationConfig basic_config = 2 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    */
   com.google.cloud.datalabeling.v1beta1.HumanAnnotationConfigOrBuilder getBasicConfigOrBuilder();
 
@@ -271,7 +281,9 @@ public interface LabelVideoRequestOrBuilder
    * Required. The type of video labeling task.
    * </pre>
    *
-   * <code>.google.cloud.datalabeling.v1beta1.LabelVideoRequest.Feature feature = 3;</code>
+   * <code>
+   * .google.cloud.datalabeling.v1beta1.LabelVideoRequest.Feature feature = 3 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    *
    * @return The enum numeric value on the wire for feature.
    */
@@ -283,7 +295,9 @@ public interface LabelVideoRequestOrBuilder
    * Required. The type of video labeling task.
    * </pre>
    *
-   * <code>.google.cloud.datalabeling.v1beta1.LabelVideoRequest.Feature feature = 3;</code>
+   * <code>
+   * .google.cloud.datalabeling.v1beta1.LabelVideoRequest.Feature feature = 3 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    *
    * @return The feature.
    */

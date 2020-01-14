@@ -53,7 +53,7 @@ public interface AnnotationSpecOrBuilder
    *
    * <pre>
    * Optional. User-provided description of the annotation specification.
-   * The description can be up to 10000 characters long.
+   * The description can be up to 10,000 characters long.
    * </pre>
    *
    * <code>string description = 2;</code>
@@ -66,7 +66,7 @@ public interface AnnotationSpecOrBuilder
    *
    * <pre>
    * Optional. User-provided description of the annotation specification.
-   * The description can be up to 10000 characters long.
+   * The description can be up to 10,000 characters long.
    * </pre>
    *
    * <code>string description = 2;</code>

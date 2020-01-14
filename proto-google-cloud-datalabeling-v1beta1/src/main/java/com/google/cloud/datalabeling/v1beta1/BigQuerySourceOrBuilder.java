@@ -27,8 +27,17 @@ public interface BigQuerySourceOrBuilder
    *
    *
    * <pre>
-   * Required. BigQuery URI to a table, up to 2000 characters long.
-   * Accepted forms: BigQuery gs path e.g. bq://projectId.bqDatasetId.bqTableId
+   * Required. BigQuery URI to a table, up to 2,000 characters long. If you
+   * specify the URI of a table that does not exist, Data Labeling Service
+   * creates a table at the URI with the correct schema when you create your
+   * [EvaluationJob][google.cloud.datalabeling.v1beta1.EvaluationJob]. If you specify the URI of a table that already exists,
+   * it must have the
+   * [correct
+   * schema](/ml-engine/docs/continuous-evaluation/create-job#table-schema).
+   * Provide the table URI in the following format:
+   * "bq://&lt;var&gt;{your_project_id}&lt;/var&gt;/&lt;var&gt;{your_dataset_name}&lt;/var&gt;/&lt;var&gt;{your_table_name}&lt;/var&gt;"
+   * [Learn
+   * more](/ml-engine/docs/continuous-evaluation/create-job#table-schema).
    * </pre>
    *
    * <code>string input_uri = 1;</code>
@@ -40,8 +49,17 @@ public interface BigQuerySourceOrBuilder
    *
    *
    * <pre>
-   * Required. BigQuery URI to a table, up to 2000 characters long.
-   * Accepted forms: BigQuery gs path e.g. bq://projectId.bqDatasetId.bqTableId
+   * Required. BigQuery URI to a table, up to 2,000 characters long. If you
+   * specify the URI of a table that does not exist, Data Labeling Service
+   * creates a table at the URI with the correct schema when you create your
+   * [EvaluationJob][google.cloud.datalabeling.v1beta1.EvaluationJob]. If you specify the URI of a table that already exists,
+   * it must have the
+   * [correct
+   * schema](/ml-engine/docs/continuous-evaluation/create-job#table-schema).
+   * Provide the table URI in the following format:
+   * "bq://&lt;var&gt;{your_project_id}&lt;/var&gt;/&lt;var&gt;{your_dataset_name}&lt;/var&gt;/&lt;var&gt;{your_table_name}&lt;/var&gt;"
+   * [Learn
+   * more](/ml-engine/docs/continuous-evaluation/create-job#table-schema).
    * </pre>
    *
    * <code>string input_uri = 1;</code>

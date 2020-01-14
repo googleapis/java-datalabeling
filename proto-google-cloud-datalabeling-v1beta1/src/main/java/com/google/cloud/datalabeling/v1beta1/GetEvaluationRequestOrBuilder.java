@@ -28,10 +28,12 @@ public interface GetEvaluationRequestOrBuilder
    *
    * <pre>
    * Required. Name of the evaluation. Format:
-   * 'projects/{project_id}/datasets/{dataset_id}/evaluations/{evaluation_id}'
+   * "projects/&lt;var&gt;{project_id}&lt;/var&gt;/datasets/&lt;var&gt;{dataset_id}&lt;/var&gt;/evaluations/&lt;var&gt;{evaluation_id}&lt;/var&gt;'
    * </pre>
    *
-   * <code>string name = 1;</code>
+   * <code>
+   * string name = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+   * </code>
    *
    * @return The name.
    */
@@ -41,10 +43,12 @@ public interface GetEvaluationRequestOrBuilder
    *
    * <pre>
    * Required. Name of the evaluation. Format:
-   * 'projects/{project_id}/datasets/{dataset_id}/evaluations/{evaluation_id}'
+   * "projects/&lt;var&gt;{project_id}&lt;/var&gt;/datasets/&lt;var&gt;{dataset_id}&lt;/var&gt;/evaluations/&lt;var&gt;{evaluation_id}&lt;/var&gt;'
    * </pre>
    *
-   * <code>string name = 1;</code>
+   * <code>
+   * string name = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+   * </code>
    *
    * @return The bytes for name.
    */

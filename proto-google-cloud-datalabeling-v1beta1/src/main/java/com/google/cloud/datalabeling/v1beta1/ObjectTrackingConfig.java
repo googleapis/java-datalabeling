@@ -120,7 +120,7 @@ public final class ObjectTrackingConfig extends com.google.protobuf.GeneratedMes
    * Required. Annotation spec set resource name.
    * </pre>
    *
-   * <code>string annotation_spec_set = 1;</code>
+   * <code>string annotation_spec_set = 1 [(.google.api.field_behavior) = REQUIRED];</code>
    *
    * @return The annotationSpecSet.
    */
@@ -142,7 +142,7 @@ public final class ObjectTrackingConfig extends com.google.protobuf.GeneratedMes
    * Required. Annotation spec set resource name.
    * </pre>
    *
-   * <code>string annotation_spec_set = 1;</code>
+   * <code>string annotation_spec_set = 1 [(.google.api.field_behavior) = REQUIRED];</code>
    *
    * @return The bytes for annotationSpecSet.
    */
@@ -485,7 +485,7 @@ public final class ObjectTrackingConfig extends com.google.protobuf.GeneratedMes
      * Required. Annotation spec set resource name.
      * </pre>
      *
-     * <code>string annotation_spec_set = 1;</code>
+     * <code>string annotation_spec_set = 1 [(.google.api.field_behavior) = REQUIRED];</code>
      *
      * @return The annotationSpecSet.
      */
@@ -507,7 +507,7 @@ public final class ObjectTrackingConfig extends com.google.protobuf.GeneratedMes
      * Required. Annotation spec set resource name.
      * </pre>
      *
-     * <code>string annotation_spec_set = 1;</code>
+     * <code>string annotation_spec_set = 1 [(.google.api.field_behavior) = REQUIRED];</code>
      *
      * @return The bytes for annotationSpecSet.
      */
@@ -529,7 +529,7 @@ public final class ObjectTrackingConfig extends com.google.protobuf.GeneratedMes
      * Required. Annotation spec set resource name.
      * </pre>
      *
-     * <code>string annotation_spec_set = 1;</code>
+     * <code>string annotation_spec_set = 1 [(.google.api.field_behavior) = REQUIRED];</code>
      *
      * @param value The annotationSpecSet to set.
      * @return This builder for chaining.
@@ -550,7 +550,7 @@ public final class ObjectTrackingConfig extends com.google.protobuf.GeneratedMes
      * Required. Annotation spec set resource name.
      * </pre>
      *
-     * <code>string annotation_spec_set = 1;</code>
+     * <code>string annotation_spec_set = 1 [(.google.api.field_behavior) = REQUIRED];</code>
      *
      * @return This builder for chaining.
      */
@@ -567,7 +567,7 @@ public final class ObjectTrackingConfig extends com.google.protobuf.GeneratedMes
      * Required. Annotation spec set resource name.
      * </pre>
      *
-     * <code>string annotation_spec_set = 1;</code>
+     * <code>string annotation_spec_set = 1 [(.google.api.field_behavior) = REQUIRED];</code>
      *
      * @param value The bytes for annotationSpecSet to set.
      * @return This builder for chaining.

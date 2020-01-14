@@ -122,7 +122,9 @@ public final class DeleteAnnotationSpecSetRequest extends com.google.protobuf.Ge
    * `projects/{project_id}/annotationSpecSets/{annotation_spec_set_id}`.
    * </pre>
    *
-   * <code>string name = 1;</code>
+   * <code>
+   * string name = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+   * </code>
    *
    * @return The name.
    */
@@ -145,7 +147,9 @@ public final class DeleteAnnotationSpecSetRequest extends com.google.protobuf.Ge
    * `projects/{project_id}/annotationSpecSets/{annotation_spec_set_id}`.
    * </pre>
    *
-   * <code>string name = 1;</code>
+   * <code>
+   * string name = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+   * </code>
    *
    * @return The bytes for name.
    */
@@ -497,7 +501,9 @@ public final class DeleteAnnotationSpecSetRequest extends com.google.protobuf.Ge
      * `projects/{project_id}/annotationSpecSets/{annotation_spec_set_id}`.
      * </pre>
      *
-     * <code>string name = 1;</code>
+     * <code>
+     * string name = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+     * </code>
      *
      * @return The name.
      */
@@ -520,7 +526,9 @@ public final class DeleteAnnotationSpecSetRequest extends com.google.protobuf.Ge
      * `projects/{project_id}/annotationSpecSets/{annotation_spec_set_id}`.
      * </pre>
      *
-     * <code>string name = 1;</code>
+     * <code>
+     * string name = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+     * </code>
      *
      * @return The bytes for name.
      */
@@ -543,7 +551,9 @@ public final class DeleteAnnotationSpecSetRequest extends com.google.protobuf.Ge
      * `projects/{project_id}/annotationSpecSets/{annotation_spec_set_id}`.
      * </pre>
      *
-     * <code>string name = 1;</code>
+     * <code>
+     * string name = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+     * </code>
      *
      * @param value The name to set.
      * @return This builder for chaining.
@@ -565,7 +575,9 @@ public final class DeleteAnnotationSpecSetRequest extends com.google.protobuf.Ge
      * `projects/{project_id}/annotationSpecSets/{annotation_spec_set_id}`.
      * </pre>
      *
-     * <code>string name = 1;</code>
+     * <code>
+     * string name = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+     * </code>
      *
      * @return This builder for chaining.
      */
@@ -583,7 +595,9 @@ public final class DeleteAnnotationSpecSetRequest extends com.google.protobuf.Ge
      * `projects/{project_id}/annotationSpecSets/{annotation_spec_set_id}`.
      * </pre>
      *
-     * <code>string name = 1;</code>
+     * <code>
+     * string name = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+     * </code>
      *
      * @param value The bytes for name to set.
      * @return This builder for chaining.

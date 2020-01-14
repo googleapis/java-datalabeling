@@ -31,7 +31,9 @@ public interface ImportDataRequestOrBuilder
    * projects/{project_id}/datasets/{dataset_id}
    * </pre>
    *
-   * <code>string name = 1;</code>
+   * <code>
+   * string name = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+   * </code>
    *
    * @return The name.
    */
@@ -44,7 +46,9 @@ public interface ImportDataRequestOrBuilder
    * projects/{project_id}/datasets/{dataset_id}
    * </pre>
    *
-   * <code>string name = 1;</code>
+   * <code>
+   * string name = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+   * </code>
    *
    * @return The bytes for name.
    */
@@ -57,7 +61,9 @@ public interface ImportDataRequestOrBuilder
    * Required. Specify the input source of the data.
    * </pre>
    *
-   * <code>.google.cloud.datalabeling.v1beta1.InputConfig input_config = 2;</code>
+   * <code>
+   * .google.cloud.datalabeling.v1beta1.InputConfig input_config = 2 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    *
    * @return Whether the inputConfig field is set.
    */
@@ -69,7 +75,9 @@ public interface ImportDataRequestOrBuilder
    * Required. Specify the input source of the data.
    * </pre>
    *
-   * <code>.google.cloud.datalabeling.v1beta1.InputConfig input_config = 2;</code>
+   * <code>
+   * .google.cloud.datalabeling.v1beta1.InputConfig input_config = 2 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    *
    * @return The inputConfig.
    */
@@ -81,7 +89,9 @@ public interface ImportDataRequestOrBuilder
    * Required. Specify the input source of the data.
    * </pre>
    *
-   * <code>.google.cloud.datalabeling.v1beta1.InputConfig input_config = 2;</code>
+   * <code>
+   * .google.cloud.datalabeling.v1beta1.InputConfig input_config = 2 [(.google.api.field_behavior) = REQUIRED];
+   * </code>
    */
   com.google.cloud.datalabeling.v1beta1.InputConfigOrBuilder getInputConfigOrBuilder();
 

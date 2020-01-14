@@ -28,10 +28,12 @@ public interface GetEvaluationJobRequestOrBuilder
    *
    * <pre>
    * Required. Name of the evaluation job. Format:
-   * 'projects/{project_id}/evaluationJobs/{evaluation_job_id}'
+   * "projects/&lt;var&gt;{project_id}&lt;/var&gt;/evaluationJobs/&lt;var&gt;{evaluation_job_id}&lt;/var&gt;"
    * </pre>
    *
-   * <code>string name = 1;</code>
+   * <code>
+   * string name = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+   * </code>
    *
    * @return The name.
    */
@@ -41,10 +43,12 @@ public interface GetEvaluationJobRequestOrBuilder
    *
    * <pre>
    * Required. Name of the evaluation job. Format:
-   * 'projects/{project_id}/evaluationJobs/{evaluation_job_id}'
+   * "projects/&lt;var&gt;{project_id}&lt;/var&gt;/evaluationJobs/&lt;var&gt;{evaluation_job_id}&lt;/var&gt;"
    * </pre>
    *
-   * <code>string name = 1;</code>
+   * <code>
+   * string name = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+   * </code>
    *
    * @return The bytes for name.
    */

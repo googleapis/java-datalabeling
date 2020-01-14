@@ -27,7 +27,7 @@ public interface SearchEvaluationsResponseOrBuilder
    *
    *
    * <pre>
-   * The list of evaluations to return.
+   * The list of evaluations matching the search.
    * </pre>
    *
    * <code>repeated .google.cloud.datalabeling.v1beta1.Evaluation evaluations = 1;</code>
@@ -37,7 +37,7 @@ public interface SearchEvaluationsResponseOrBuilder
    *
    *
    * <pre>
-   * The list of evaluations to return.
+   * The list of evaluations matching the search.
    * </pre>
    *
    * <code>repeated .google.cloud.datalabeling.v1beta1.Evaluation evaluations = 1;</code>
@@ -47,7 +47,7 @@ public interface SearchEvaluationsResponseOrBuilder
    *
    *
    * <pre>
-   * The list of evaluations to return.
+   * The list of evaluations matching the search.
    * </pre>
    *
    * <code>repeated .google.cloud.datalabeling.v1beta1.Evaluation evaluations = 1;</code>
@@ -57,7 +57,7 @@ public interface SearchEvaluationsResponseOrBuilder
    *
    *
    * <pre>
-   * The list of evaluations to return.
+   * The list of evaluations matching the search.
    * </pre>
    *
    * <code>repeated .google.cloud.datalabeling.v1beta1.Evaluation evaluations = 1;</code>
@@ -68,7 +68,7 @@ public interface SearchEvaluationsResponseOrBuilder
    *
    *
    * <pre>
-   * The list of evaluations to return.
+   * The list of evaluations matching the search.
    * </pre>
    *
    * <code>repeated .google.cloud.datalabeling.v1beta1.Evaluation evaluations = 1;</code>

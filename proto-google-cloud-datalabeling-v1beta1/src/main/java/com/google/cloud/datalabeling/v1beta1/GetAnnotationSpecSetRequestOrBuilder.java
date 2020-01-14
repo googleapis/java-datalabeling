@@ -31,7 +31,9 @@ public interface GetAnnotationSpecSetRequestOrBuilder
    * projects/{project_id}/annotationSpecSets/{annotation_spec_set_id}
    * </pre>
    *
-   * <code>string name = 1;</code>
+   * <code>
+   * string name = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+   * </code>
    *
    * @return The name.
    */
@@ -44,7 +46,9 @@ public interface GetAnnotationSpecSetRequestOrBuilder
    * projects/{project_id}/annotationSpecSets/{annotation_spec_set_id}
    * </pre>
    *
-   * <code>string name = 1;</code>
+   * <code>
+   * string name = 1 [(.google.api.field_behavior) = REQUIRED, (.google.api.resource_reference) = { ... }
+   * </code>
    *
    * @return The bytes for name.
    */

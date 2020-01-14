@@ -22,6 +22,7 @@ package com.google.cloud.datalabeling.v1beta1;
  *
  *
  * <pre>
+ * Deprecated: this instruction format is not supported any more.
  * Instruction from a CSV file.
  * </pre>
  *
@@ -321,6 +322,7 @@ public final class CsvInstruction extends com.google.protobuf.GeneratedMessageV3
    *
    *
    * <pre>
+   * Deprecated: this instruction format is not supported any more.
    * Instruction from a CSV file.
    * </pre>
    *

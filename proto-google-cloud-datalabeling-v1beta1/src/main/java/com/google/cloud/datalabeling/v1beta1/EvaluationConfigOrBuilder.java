@@ -24,6 +24,14 @@ public interface EvaluationConfigOrBuilder
     com.google.protobuf.MessageOrBuilder {
 
   /**
+   *
+   *
+   * <pre>
+   * Only specify this field if the related model performs image object
+   * detection (`IMAGE_BOUNDING_BOX_ANNOTATION`). Describes how to evaluate
+   * bounding boxes.
+   * </pre>
+   *
    * <code>
    * .google.cloud.datalabeling.v1beta1.BoundingBoxEvaluationOptions bounding_box_evaluation_options = 1;
    * </code>
@@ -32,6 +40,14 @@ public interface EvaluationConfigOrBuilder
    */
   boolean hasBoundingBoxEvaluationOptions();
   /**
+   *
+   *
+   * <pre>
+   * Only specify this field if the related model performs image object
+   * detection (`IMAGE_BOUNDING_BOX_ANNOTATION`). Describes how to evaluate
+   * bounding boxes.
+   * </pre>
+   *
    * <code>
    * .google.cloud.datalabeling.v1beta1.BoundingBoxEvaluationOptions bounding_box_evaluation_options = 1;
    * </code>
@@ -41,6 +57,14 @@ public interface EvaluationConfigOrBuilder
   com.google.cloud.datalabeling.v1beta1.BoundingBoxEvaluationOptions
       getBoundingBoxEvaluationOptions();
   /**
+   *
+   *
+   * <pre>
+   * Only specify this field if the related model performs image object
+   * detection (`IMAGE_BOUNDING_BOX_ANNOTATION`). Describes how to evaluate
+   * bounding boxes.
+   * </pre>
+   *
    * <code>
    * .google.cloud.datalabeling.v1beta1.BoundingBoxEvaluationOptions bounding_box_evaluation_options = 1;
    * </code>
