@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.116.4](https://www.github.com/googleapis/java-datalabeling/compare/v0.116.3...v0.116.4) (2020-01-14)
+
+
+### Dependencies
+
+* update dependency org.threeten:threetenbp to v1.4.1 ([c4eaa7d](https://www.github.com/googleapis/java-datalabeling/commit/c4eaa7d1e8a802ff2a0b2ec9c19781cd7a593e01))
+
 ### [0.116.3](https://www.github.com/googleapis/java-datalabeling/compare/v0.116.2...v0.116.3) (2020-01-07)
 
 
