@@ -3,4 +3,4 @@
 
 proto-google-cloud-datalabeling-v1beta1:0.82.0:0.82.0
 grpc-google-cloud-datalabeling-v1beta1:0.82.0:0.82.0
-google-cloud-datalabeling:0.117.0-alpha:0.117.0-alpha
+google-cloud-datalabeling:0.117.0:0.117.0
