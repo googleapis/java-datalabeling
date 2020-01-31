@@ -1,5 +1,13 @@
 # Changelog
 
+### [0.117.1](https://www.github.com/googleapis/java-datalabeling/compare/v0.117.0...v0.117.1) (2020-01-31)
+
+
+### Dependencies
+
+* update core dependencies ([#52](https://www.github.com/googleapis/java-datalabeling/issues/52)) ([68b1980](https://www.github.com/googleapis/java-datalabeling/commit/68b1980b992732ca3876b524d43aeff624197568))
+* update dependency com.google.guava:guava-bom to v28.2-android ([#50](https://www.github.com/googleapis/java-datalabeling/issues/50)) ([acaba19](https://www.github.com/googleapis/java-datalabeling/commit/acaba19f53b720d3a2789f61e0769fdf8eb6e09c))
+
 ## [0.117.0](https://www.github.com/googleapis/java-datalabeling/compare/v0.116.3...v0.117.0) (2020-01-24)
 
 
