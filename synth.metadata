@@ -1,6 +1,13 @@
 {
-  "updateTime": "2020-04-06T23:17:17.945190Z",
+  "updateTime": "2020-04-08T23:32:42.504032Z",
   "sources": [
+    {
+      "git": {
+        "name": ".",
+        "remote": "https://github.com/googleapis/java-datalabeling.git",
+        "sha": "eaded83bc61f52cf947a4ae8b2456de99576bc83"
+      }
+    },
     {
       "git": {
         "name": "googleapis",
