@@ -22,13 +22,7 @@ import static io.grpc.stub.ClientCalls.futureUnaryCall;
 import static io.grpc.stub.ServerCalls.asyncUnaryCall;
 import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
 
-/**
- *
- *
- * <pre>
- * Service for the AI Platform Data Labeling API.
- * </pre>
- */
+/** */
 @javax.annotation.Generated(
     value = "by gRPC proto compiler",
     comments = "Source: google/cloud/datalabeling/v1beta1/data_labeling_service.proto")
@@ -1703,22 +1697,10 @@ public final class DataLabelingServiceGrpc {
     return DataLabelingServiceFutureStub.newStub(factory, channel);
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * Service for the AI Platform Data Labeling API.
-   * </pre>
-   */
+  /** */
   public abstract static class DataLabelingServiceImplBase implements io.grpc.BindableService {
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates dataset. If success return a Dataset resource.
-     * </pre>
-     */
+    /** */
     public void createDataset(
         com.google.cloud.datalabeling.v1beta1.CreateDatasetRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.datalabeling.v1beta1.Dataset>
@@ -1726,13 +1708,7 @@ public final class DataLabelingServiceGrpc {
       asyncUnimplementedUnaryCall(getCreateDatasetMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets dataset by resource name.
-     * </pre>
-     */
+    /** */
     public void getDataset(
         com.google.cloud.datalabeling.v1beta1.GetDatasetRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.datalabeling.v1beta1.Dataset>
@@ -1740,13 +1716,7 @@ public final class DataLabelingServiceGrpc {
       asyncUnimplementedUnaryCall(getGetDatasetMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists datasets under a project. Pagination is supported.
-     * </pre>
-     */
+    /** */
     public void listDatasets(
         com.google.cloud.datalabeling.v1beta1.ListDatasetsRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.datalabeling.v1beta1.ListDatasetsResponse>
@@ -1754,57 +1724,28 @@ public final class DataLabelingServiceGrpc {
       asyncUnimplementedUnaryCall(getListDatasetsMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes a dataset by resource name.
-     * </pre>
-     */
+    /** */
     public void deleteDataset(
         com.google.cloud.datalabeling.v1beta1.DeleteDatasetRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
       asyncUnimplementedUnaryCall(getDeleteDatasetMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Imports data into dataset based on source locations defined in request.
-     * It can be called multiple times for the same dataset. Each dataset can
-     * only have one long running operation running on it. For example, no
-     * labeling task (also long running operation) can be started while
-     * importing is still ongoing. Vice versa.
-     * </pre>
-     */
+    /** */
     public void importData(
         com.google.cloud.datalabeling.v1beta1.ImportDataRequest request,
         io.grpc.stub.StreamObserver<com.google.longrunning.Operation> responseObserver) {
       asyncUnimplementedUnaryCall(getImportDataMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Exports data and annotations from dataset.
-     * </pre>
-     */
+    /** */
     public void exportData(
         com.google.cloud.datalabeling.v1beta1.ExportDataRequest request,
         io.grpc.stub.StreamObserver<com.google.longrunning.Operation> responseObserver) {
       asyncUnimplementedUnaryCall(getExportDataMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets a data item in a dataset by resource name. This API can be
-     * called after data are imported into dataset.
-     * </pre>
-     */
+    /** */
     public void getDataItem(
         com.google.cloud.datalabeling.v1beta1.GetDataItemRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.datalabeling.v1beta1.DataItem>
@@ -1812,14 +1753,7 @@ public final class DataLabelingServiceGrpc {
       asyncUnimplementedUnaryCall(getGetDataItemMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists data items in a dataset. This API can be called after data
-     * are imported into dataset. Pagination is supported.
-     * </pre>
-     */
+    /** */
     public void listDataItems(
         com.google.cloud.datalabeling.v1beta1.ListDataItemsRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.datalabeling.v1beta1.ListDataItemsResponse>
@@ -1827,13 +1761,7 @@ public final class DataLabelingServiceGrpc {
       asyncUnimplementedUnaryCall(getListDataItemsMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets an annotated dataset by resource name.
-     * </pre>
-     */
+    /** */
     public void getAnnotatedDataset(
         com.google.cloud.datalabeling.v1beta1.GetAnnotatedDatasetRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.datalabeling.v1beta1.AnnotatedDataset>
@@ -1841,13 +1769,7 @@ public final class DataLabelingServiceGrpc {
       asyncUnimplementedUnaryCall(getGetAnnotatedDatasetMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists annotated datasets for a dataset. Pagination is supported.
-     * </pre>
-     */
+    /** */
     public void listAnnotatedDatasets(
         com.google.cloud.datalabeling.v1beta1.ListAnnotatedDatasetsRequest request,
         io.grpc.stub.StreamObserver<
@@ -1856,68 +1778,35 @@ public final class DataLabelingServiceGrpc {
       asyncUnimplementedUnaryCall(getListAnnotatedDatasetsMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes an annotated dataset by resource name.
-     * </pre>
-     */
+    /** */
     public void deleteAnnotatedDataset(
         com.google.cloud.datalabeling.v1beta1.DeleteAnnotatedDatasetRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
       asyncUnimplementedUnaryCall(getDeleteAnnotatedDatasetMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Starts a labeling task for image. The type of image labeling task is
-     * configured by feature in the request.
-     * </pre>
-     */
+    /** */
     public void labelImage(
         com.google.cloud.datalabeling.v1beta1.LabelImageRequest request,
         io.grpc.stub.StreamObserver<com.google.longrunning.Operation> responseObserver) {
       asyncUnimplementedUnaryCall(getLabelImageMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Starts a labeling task for video. The type of video labeling task is
-     * configured by feature in the request.
-     * </pre>
-     */
+    /** */
     public void labelVideo(
         com.google.cloud.datalabeling.v1beta1.LabelVideoRequest request,
         io.grpc.stub.StreamObserver<com.google.longrunning.Operation> responseObserver) {
       asyncUnimplementedUnaryCall(getLabelVideoMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Starts a labeling task for text. The type of text labeling task is
-     * configured by feature in the request.
-     * </pre>
-     */
+    /** */
     public void labelText(
         com.google.cloud.datalabeling.v1beta1.LabelTextRequest request,
         io.grpc.stub.StreamObserver<com.google.longrunning.Operation> responseObserver) {
       asyncUnimplementedUnaryCall(getLabelTextMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets an example by resource name, including both data and annotation.
-     * </pre>
-     */
+    /** */
     public void getExample(
         com.google.cloud.datalabeling.v1beta1.GetExampleRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.datalabeling.v1beta1.Example>
@@ -1925,13 +1814,7 @@ public final class DataLabelingServiceGrpc {
       asyncUnimplementedUnaryCall(getGetExampleMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists examples in an annotated dataset. Pagination is supported.
-     * </pre>
-     */
+    /** */
     public void listExamples(
         com.google.cloud.datalabeling.v1beta1.ListExamplesRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.datalabeling.v1beta1.ListExamplesResponse>
@@ -1939,13 +1822,7 @@ public final class DataLabelingServiceGrpc {
       asyncUnimplementedUnaryCall(getListExamplesMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates an annotation spec set by providing a set of labels.
-     * </pre>
-     */
+    /** */
     public void createAnnotationSpecSet(
         com.google.cloud.datalabeling.v1beta1.CreateAnnotationSpecSetRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.datalabeling.v1beta1.AnnotationSpecSet>
@@ -1953,13 +1830,7 @@ public final class DataLabelingServiceGrpc {
       asyncUnimplementedUnaryCall(getCreateAnnotationSpecSetMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets an annotation spec set by resource name.
-     * </pre>
-     */
+    /** */
     public void getAnnotationSpecSet(
         com.google.cloud.datalabeling.v1beta1.GetAnnotationSpecSetRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.datalabeling.v1beta1.AnnotationSpecSet>
@@ -1967,13 +1838,7 @@ public final class DataLabelingServiceGrpc {
       asyncUnimplementedUnaryCall(getGetAnnotationSpecSetMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists annotation spec sets for a project. Pagination is supported.
-     * </pre>
-     */
+    /** */
     public void listAnnotationSpecSets(
         com.google.cloud.datalabeling.v1beta1.ListAnnotationSpecSetsRequest request,
         io.grpc.stub.StreamObserver<
@@ -1982,39 +1847,21 @@ public final class DataLabelingServiceGrpc {
       asyncUnimplementedUnaryCall(getListAnnotationSpecSetsMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes an annotation spec set by resource name.
-     * </pre>
-     */
+    /** */
     public void deleteAnnotationSpecSet(
         com.google.cloud.datalabeling.v1beta1.DeleteAnnotationSpecSetRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
       asyncUnimplementedUnaryCall(getDeleteAnnotationSpecSetMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates an instruction for how data should be labeled.
-     * </pre>
-     */
+    /** */
     public void createInstruction(
         com.google.cloud.datalabeling.v1beta1.CreateInstructionRequest request,
         io.grpc.stub.StreamObserver<com.google.longrunning.Operation> responseObserver) {
       asyncUnimplementedUnaryCall(getCreateInstructionMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets an instruction by resource name.
-     * </pre>
-     */
+    /** */
     public void getInstruction(
         com.google.cloud.datalabeling.v1beta1.GetInstructionRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.datalabeling.v1beta1.Instruction>
@@ -2022,13 +1869,7 @@ public final class DataLabelingServiceGrpc {
       asyncUnimplementedUnaryCall(getGetInstructionMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists instructions for a project. Pagination is supported.
-     * </pre>
-     */
+    /** */
     public void listInstructions(
         com.google.cloud.datalabeling.v1beta1.ListInstructionsRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.datalabeling.v1beta1.ListInstructionsResponse>
@@ -2036,27 +1877,14 @@ public final class DataLabelingServiceGrpc {
       asyncUnimplementedUnaryCall(getListInstructionsMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes an instruction object by resource name.
-     * </pre>
-     */
+    /** */
     public void deleteInstruction(
         com.google.cloud.datalabeling.v1beta1.DeleteInstructionRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
       asyncUnimplementedUnaryCall(getDeleteInstructionMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets an evaluation by resource name (to search, use
-     * [projects.evaluations.search][google.cloud.datalabeling.v1beta1.DataLabelingService.SearchEvaluations]).
-     * </pre>
-     */
+    /** */
     public void getEvaluation(
         com.google.cloud.datalabeling.v1beta1.GetEvaluationRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.datalabeling.v1beta1.Evaluation>
@@ -2064,13 +1892,7 @@ public final class DataLabelingServiceGrpc {
       asyncUnimplementedUnaryCall(getGetEvaluationMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Searches [evaluations][google.cloud.datalabeling.v1beta1.Evaluation] within a project.
-     * </pre>
-     */
+    /** */
     public void searchEvaluations(
         com.google.cloud.datalabeling.v1beta1.SearchEvaluationsRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.datalabeling.v1beta1.SearchEvaluationsResponse>
@@ -2078,15 +1900,7 @@ public final class DataLabelingServiceGrpc {
       asyncUnimplementedUnaryCall(getSearchEvaluationsMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Searches example comparisons from an evaluation. The return format is a
-     * list of example comparisons that show ground truth and prediction(s) for
-     * a single input. Search by providing an evaluation ID.
-     * </pre>
-     */
+    /** */
     public void searchExampleComparisons(
         com.google.cloud.datalabeling.v1beta1.SearchExampleComparisonsRequest request,
         io.grpc.stub.StreamObserver<
@@ -2095,13 +1909,7 @@ public final class DataLabelingServiceGrpc {
       asyncUnimplementedUnaryCall(getSearchExampleComparisonsMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates an evaluation job.
-     * </pre>
-     */
+    /** */
     public void createEvaluationJob(
         com.google.cloud.datalabeling.v1beta1.CreateEvaluationJobRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.datalabeling.v1beta1.EvaluationJob>
@@ -2109,17 +1917,7 @@ public final class DataLabelingServiceGrpc {
       asyncUnimplementedUnaryCall(getCreateEvaluationJobMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Updates an evaluation job. You can only update certain fields of the job's
-     * [EvaluationJobConfig][google.cloud.datalabeling.v1beta1.EvaluationJobConfig]: `humanAnnotationConfig.instruction`,
-     * `exampleCount`, and `exampleSamplePercentage`.
-     * If you want to change any other aspect of the evaluation job, you must
-     * delete the job and create a new one.
-     * </pre>
-     */
+    /** */
     public void updateEvaluationJob(
         com.google.cloud.datalabeling.v1beta1.UpdateEvaluationJobRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.datalabeling.v1beta1.EvaluationJob>
@@ -2127,13 +1925,7 @@ public final class DataLabelingServiceGrpc {
       asyncUnimplementedUnaryCall(getUpdateEvaluationJobMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets an evaluation job by resource name.
-     * </pre>
-     */
+    /** */
     public void getEvaluationJob(
         com.google.cloud.datalabeling.v1beta1.GetEvaluationJobRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.datalabeling.v1beta1.EvaluationJob>
@@ -2141,55 +1933,28 @@ public final class DataLabelingServiceGrpc {
       asyncUnimplementedUnaryCall(getGetEvaluationJobMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Pauses an evaluation job. Pausing an evaluation job that is already in a
-     * `PAUSED` state is a no-op.
-     * </pre>
-     */
+    /** */
     public void pauseEvaluationJob(
         com.google.cloud.datalabeling.v1beta1.PauseEvaluationJobRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
       asyncUnimplementedUnaryCall(getPauseEvaluationJobMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Resumes a paused evaluation job. A deleted evaluation job can't be resumed.
-     * Resuming a running or scheduled evaluation job is a no-op.
-     * </pre>
-     */
+    /** */
     public void resumeEvaluationJob(
         com.google.cloud.datalabeling.v1beta1.ResumeEvaluationJobRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
       asyncUnimplementedUnaryCall(getResumeEvaluationJobMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Stops and deletes an evaluation job.
-     * </pre>
-     */
+    /** */
     public void deleteEvaluationJob(
         com.google.cloud.datalabeling.v1beta1.DeleteEvaluationJobRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
       asyncUnimplementedUnaryCall(getDeleteEvaluationJobMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists all evaluation jobs within a project with possible filters.
-     * Pagination is supported.
-     * </pre>
-     */
+    /** */
     public void listEvaluationJobs(
         com.google.cloud.datalabeling.v1beta1.ListEvaluationJobsRequest request,
         io.grpc.stub.StreamObserver<
@@ -2428,13 +2193,7 @@ public final class DataLabelingServiceGrpc {
     }
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * Service for the AI Platform Data Labeling API.
-   * </pre>
-   */
+  /** */
   public static final class DataLabelingServiceStub
       extends io.grpc.stub.AbstractAsyncStub<DataLabelingServiceStub> {
     private DataLabelingServiceStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
@@ -2447,13 +2206,7 @@ public final class DataLabelingServiceGrpc {
       return new DataLabelingServiceStub(channel, callOptions);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates dataset. If success return a Dataset resource.
-     * </pre>
-     */
+    /** */
     public void createDataset(
         com.google.cloud.datalabeling.v1beta1.CreateDatasetRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.datalabeling.v1beta1.Dataset>
@@ -2464,13 +2217,7 @@ public final class DataLabelingServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets dataset by resource name.
-     * </pre>
-     */
+    /** */
     public void getDataset(
         com.google.cloud.datalabeling.v1beta1.GetDatasetRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.datalabeling.v1beta1.Dataset>
@@ -2479,13 +2226,7 @@ public final class DataLabelingServiceGrpc {
           getChannel().newCall(getGetDatasetMethod(), getCallOptions()), request, responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists datasets under a project. Pagination is supported.
-     * </pre>
-     */
+    /** */
     public void listDatasets(
         com.google.cloud.datalabeling.v1beta1.ListDatasetsRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.datalabeling.v1beta1.ListDatasetsResponse>
@@ -2496,13 +2237,7 @@ public final class DataLabelingServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes a dataset by resource name.
-     * </pre>
-     */
+    /** */
     public void deleteDataset(
         com.google.cloud.datalabeling.v1beta1.DeleteDatasetRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
@@ -2512,17 +2247,7 @@ public final class DataLabelingServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Imports data into dataset based on source locations defined in request.
-     * It can be called multiple times for the same dataset. Each dataset can
-     * only have one long running operation running on it. For example, no
-     * labeling task (also long running operation) can be started while
-     * importing is still ongoing. Vice versa.
-     * </pre>
-     */
+    /** */
     public void importData(
         com.google.cloud.datalabeling.v1beta1.ImportDataRequest request,
         io.grpc.stub.StreamObserver<com.google.longrunning.Operation> responseObserver) {
@@ -2530,13 +2255,7 @@ public final class DataLabelingServiceGrpc {
           getChannel().newCall(getImportDataMethod(), getCallOptions()), request, responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Exports data and annotations from dataset.
-     * </pre>
-     */
+    /** */
     public void exportData(
         com.google.cloud.datalabeling.v1beta1.ExportDataRequest request,
         io.grpc.stub.StreamObserver<com.google.longrunning.Operation> responseObserver) {
@@ -2544,14 +2263,7 @@ public final class DataLabelingServiceGrpc {
           getChannel().newCall(getExportDataMethod(), getCallOptions()), request, responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets a data item in a dataset by resource name. This API can be
-     * called after data are imported into dataset.
-     * </pre>
-     */
+    /** */
     public void getDataItem(
         com.google.cloud.datalabeling.v1beta1.GetDataItemRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.datalabeling.v1beta1.DataItem>
@@ -2562,14 +2274,7 @@ public final class DataLabelingServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists data items in a dataset. This API can be called after data
-     * are imported into dataset. Pagination is supported.
-     * </pre>
-     */
+    /** */
     public void listDataItems(
         com.google.cloud.datalabeling.v1beta1.ListDataItemsRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.datalabeling.v1beta1.ListDataItemsResponse>
@@ -2580,13 +2285,7 @@ public final class DataLabelingServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets an annotated dataset by resource name.
-     * </pre>
-     */
+    /** */
     public void getAnnotatedDataset(
         com.google.cloud.datalabeling.v1beta1.GetAnnotatedDatasetRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.datalabeling.v1beta1.AnnotatedDataset>
@@ -2597,13 +2296,7 @@ public final class DataLabelingServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists annotated datasets for a dataset. Pagination is supported.
-     * </pre>
-     */
+    /** */
     public void listAnnotatedDatasets(
         com.google.cloud.datalabeling.v1beta1.ListAnnotatedDatasetsRequest request,
         io.grpc.stub.StreamObserver<
@@ -2615,13 +2308,7 @@ public final class DataLabelingServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes an annotated dataset by resource name.
-     * </pre>
-     */
+    /** */
     public void deleteAnnotatedDataset(
         com.google.cloud.datalabeling.v1beta1.DeleteAnnotatedDatasetRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
@@ -2631,14 +2318,7 @@ public final class DataLabelingServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Starts a labeling task for image. The type of image labeling task is
-     * configured by feature in the request.
-     * </pre>
-     */
+    /** */
     public void labelImage(
         com.google.cloud.datalabeling.v1beta1.LabelImageRequest request,
         io.grpc.stub.StreamObserver<com.google.longrunning.Operation> responseObserver) {
@@ -2646,14 +2326,7 @@ public final class DataLabelingServiceGrpc {
           getChannel().newCall(getLabelImageMethod(), getCallOptions()), request, responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Starts a labeling task for video. The type of video labeling task is
-     * configured by feature in the request.
-     * </pre>
-     */
+    /** */
     public void labelVideo(
         com.google.cloud.datalabeling.v1beta1.LabelVideoRequest request,
         io.grpc.stub.StreamObserver<com.google.longrunning.Operation> responseObserver) {
@@ -2661,14 +2334,7 @@ public final class DataLabelingServiceGrpc {
           getChannel().newCall(getLabelVideoMethod(), getCallOptions()), request, responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Starts a labeling task for text. The type of text labeling task is
-     * configured by feature in the request.
-     * </pre>
-     */
+    /** */
     public void labelText(
         com.google.cloud.datalabeling.v1beta1.LabelTextRequest request,
         io.grpc.stub.StreamObserver<com.google.longrunning.Operation> responseObserver) {
@@ -2676,13 +2342,7 @@ public final class DataLabelingServiceGrpc {
           getChannel().newCall(getLabelTextMethod(), getCallOptions()), request, responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets an example by resource name, including both data and annotation.
-     * </pre>
-     */
+    /** */
     public void getExample(
         com.google.cloud.datalabeling.v1beta1.GetExampleRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.datalabeling.v1beta1.Example>
@@ -2691,13 +2351,7 @@ public final class DataLabelingServiceGrpc {
           getChannel().newCall(getGetExampleMethod(), getCallOptions()), request, responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists examples in an annotated dataset. Pagination is supported.
-     * </pre>
-     */
+    /** */
     public void listExamples(
         com.google.cloud.datalabeling.v1beta1.ListExamplesRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.datalabeling.v1beta1.ListExamplesResponse>
@@ -2708,13 +2362,7 @@ public final class DataLabelingServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates an annotation spec set by providing a set of labels.
-     * </pre>
-     */
+    /** */
     public void createAnnotationSpecSet(
         com.google.cloud.datalabeling.v1beta1.CreateAnnotationSpecSetRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.datalabeling.v1beta1.AnnotationSpecSet>
@@ -2725,13 +2373,7 @@ public final class DataLabelingServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets an annotation spec set by resource name.
-     * </pre>
-     */
+    /** */
     public void getAnnotationSpecSet(
         com.google.cloud.datalabeling.v1beta1.GetAnnotationSpecSetRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.datalabeling.v1beta1.AnnotationSpecSet>
@@ -2742,13 +2384,7 @@ public final class DataLabelingServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists annotation spec sets for a project. Pagination is supported.
-     * </pre>
-     */
+    /** */
     public void listAnnotationSpecSets(
         com.google.cloud.datalabeling.v1beta1.ListAnnotationSpecSetsRequest request,
         io.grpc.stub.StreamObserver<
@@ -2760,13 +2396,7 @@ public final class DataLabelingServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes an annotation spec set by resource name.
-     * </pre>
-     */
+    /** */
     public void deleteAnnotationSpecSet(
         com.google.cloud.datalabeling.v1beta1.DeleteAnnotationSpecSetRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
@@ -2776,13 +2406,7 @@ public final class DataLabelingServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates an instruction for how data should be labeled.
-     * </pre>
-     */
+    /** */
     public void createInstruction(
         com.google.cloud.datalabeling.v1beta1.CreateInstructionRequest request,
         io.grpc.stub.StreamObserver<com.google.longrunning.Operation> responseObserver) {
@@ -2792,13 +2416,7 @@ public final class DataLabelingServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets an instruction by resource name.
-     * </pre>
-     */
+    /** */
     public void getInstruction(
         com.google.cloud.datalabeling.v1beta1.GetInstructionRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.datalabeling.v1beta1.Instruction>
@@ -2809,13 +2427,7 @@ public final class DataLabelingServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists instructions for a project. Pagination is supported.
-     * </pre>
-     */
+    /** */
     public void listInstructions(
         com.google.cloud.datalabeling.v1beta1.ListInstructionsRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.datalabeling.v1beta1.ListInstructionsResponse>
@@ -2826,13 +2438,7 @@ public final class DataLabelingServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes an instruction object by resource name.
-     * </pre>
-     */
+    /** */
     public void deleteInstruction(
         com.google.cloud.datalabeling.v1beta1.DeleteInstructionRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
@@ -2842,14 +2448,7 @@ public final class DataLabelingServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets an evaluation by resource name (to search, use
-     * [projects.evaluations.search][google.cloud.datalabeling.v1beta1.DataLabelingService.SearchEvaluations]).
-     * </pre>
-     */
+    /** */
     public void getEvaluation(
         com.google.cloud.datalabeling.v1beta1.GetEvaluationRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.datalabeling.v1beta1.Evaluation>
@@ -2860,13 +2459,7 @@ public final class DataLabelingServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Searches [evaluations][google.cloud.datalabeling.v1beta1.Evaluation] within a project.
-     * </pre>
-     */
+    /** */
     public void searchEvaluations(
         com.google.cloud.datalabeling.v1beta1.SearchEvaluationsRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.datalabeling.v1beta1.SearchEvaluationsResponse>
@@ -2877,15 +2470,7 @@ public final class DataLabelingServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Searches example comparisons from an evaluation. The return format is a
-     * list of example comparisons that show ground truth and prediction(s) for
-     * a single input. Search by providing an evaluation ID.
-     * </pre>
-     */
+    /** */
     public void searchExampleComparisons(
         com.google.cloud.datalabeling.v1beta1.SearchExampleComparisonsRequest request,
         io.grpc.stub.StreamObserver<
@@ -2897,13 +2482,7 @@ public final class DataLabelingServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates an evaluation job.
-     * </pre>
-     */
+    /** */
     public void createEvaluationJob(
         com.google.cloud.datalabeling.v1beta1.CreateEvaluationJobRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.datalabeling.v1beta1.EvaluationJob>
@@ -2914,17 +2493,7 @@ public final class DataLabelingServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Updates an evaluation job. You can only update certain fields of the job's
-     * [EvaluationJobConfig][google.cloud.datalabeling.v1beta1.EvaluationJobConfig]: `humanAnnotationConfig.instruction`,
-     * `exampleCount`, and `exampleSamplePercentage`.
-     * If you want to change any other aspect of the evaluation job, you must
-     * delete the job and create a new one.
-     * </pre>
-     */
+    /** */
     public void updateEvaluationJob(
         com.google.cloud.datalabeling.v1beta1.UpdateEvaluationJobRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.datalabeling.v1beta1.EvaluationJob>
@@ -2935,13 +2504,7 @@ public final class DataLabelingServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets an evaluation job by resource name.
-     * </pre>
-     */
+    /** */
     public void getEvaluationJob(
         com.google.cloud.datalabeling.v1beta1.GetEvaluationJobRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.datalabeling.v1beta1.EvaluationJob>
@@ -2952,14 +2515,7 @@ public final class DataLabelingServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Pauses an evaluation job. Pausing an evaluation job that is already in a
-     * `PAUSED` state is a no-op.
-     * </pre>
-     */
+    /** */
     public void pauseEvaluationJob(
         com.google.cloud.datalabeling.v1beta1.PauseEvaluationJobRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
@@ -2969,14 +2525,7 @@ public final class DataLabelingServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Resumes a paused evaluation job. A deleted evaluation job can't be resumed.
-     * Resuming a running or scheduled evaluation job is a no-op.
-     * </pre>
-     */
+    /** */
     public void resumeEvaluationJob(
         com.google.cloud.datalabeling.v1beta1.ResumeEvaluationJobRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
@@ -2986,13 +2535,7 @@ public final class DataLabelingServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Stops and deletes an evaluation job.
-     * </pre>
-     */
+    /** */
     public void deleteEvaluationJob(
         com.google.cloud.datalabeling.v1beta1.DeleteEvaluationJobRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
@@ -3002,14 +2545,7 @@ public final class DataLabelingServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists all evaluation jobs within a project with possible filters.
-     * Pagination is supported.
-     * </pre>
-     */
+    /** */
     public void listEvaluationJobs(
         com.google.cloud.datalabeling.v1beta1.ListEvaluationJobsRequest request,
         io.grpc.stub.StreamObserver<
@@ -3022,13 +2558,7 @@ public final class DataLabelingServiceGrpc {
     }
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * Service for the AI Platform Data Labeling API.
-   * </pre>
-   */
+  /** */
   public static final class DataLabelingServiceBlockingStub
       extends io.grpc.stub.AbstractBlockingStub<DataLabelingServiceBlockingStub> {
     private DataLabelingServiceBlockingStub(
@@ -3042,128 +2572,62 @@ public final class DataLabelingServiceGrpc {
       return new DataLabelingServiceBlockingStub(channel, callOptions);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates dataset. If success return a Dataset resource.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.datalabeling.v1beta1.Dataset createDataset(
         com.google.cloud.datalabeling.v1beta1.CreateDatasetRequest request) {
       return blockingUnaryCall(getChannel(), getCreateDatasetMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets dataset by resource name.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.datalabeling.v1beta1.Dataset getDataset(
         com.google.cloud.datalabeling.v1beta1.GetDatasetRequest request) {
       return blockingUnaryCall(getChannel(), getGetDatasetMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists datasets under a project. Pagination is supported.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.datalabeling.v1beta1.ListDatasetsResponse listDatasets(
         com.google.cloud.datalabeling.v1beta1.ListDatasetsRequest request) {
       return blockingUnaryCall(getChannel(), getListDatasetsMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes a dataset by resource name.
-     * </pre>
-     */
+    /** */
     public com.google.protobuf.Empty deleteDataset(
         com.google.cloud.datalabeling.v1beta1.DeleteDatasetRequest request) {
       return blockingUnaryCall(getChannel(), getDeleteDatasetMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Imports data into dataset based on source locations defined in request.
-     * It can be called multiple times for the same dataset. Each dataset can
-     * only have one long running operation running on it. For example, no
-     * labeling task (also long running operation) can be started while
-     * importing is still ongoing. Vice versa.
-     * </pre>
-     */
+    /** */
     public com.google.longrunning.Operation importData(
         com.google.cloud.datalabeling.v1beta1.ImportDataRequest request) {
       return blockingUnaryCall(getChannel(), getImportDataMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Exports data and annotations from dataset.
-     * </pre>
-     */
+    /** */
     public com.google.longrunning.Operation exportData(
         com.google.cloud.datalabeling.v1beta1.ExportDataRequest request) {
       return blockingUnaryCall(getChannel(), getExportDataMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets a data item in a dataset by resource name. This API can be
-     * called after data are imported into dataset.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.datalabeling.v1beta1.DataItem getDataItem(
         com.google.cloud.datalabeling.v1beta1.GetDataItemRequest request) {
       return blockingUnaryCall(getChannel(), getGetDataItemMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists data items in a dataset. This API can be called after data
-     * are imported into dataset. Pagination is supported.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.datalabeling.v1beta1.ListDataItemsResponse listDataItems(
         com.google.cloud.datalabeling.v1beta1.ListDataItemsRequest request) {
       return blockingUnaryCall(getChannel(), getListDataItemsMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets an annotated dataset by resource name.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.datalabeling.v1beta1.AnnotatedDataset getAnnotatedDataset(
         com.google.cloud.datalabeling.v1beta1.GetAnnotatedDatasetRequest request) {
       return blockingUnaryCall(
           getChannel(), getGetAnnotatedDatasetMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists annotated datasets for a dataset. Pagination is supported.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.datalabeling.v1beta1.ListAnnotatedDatasetsResponse
         listAnnotatedDatasets(
             com.google.cloud.datalabeling.v1beta1.ListAnnotatedDatasetsRequest request) {
@@ -3171,115 +2635,58 @@ public final class DataLabelingServiceGrpc {
           getChannel(), getListAnnotatedDatasetsMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes an annotated dataset by resource name.
-     * </pre>
-     */
+    /** */
     public com.google.protobuf.Empty deleteAnnotatedDataset(
         com.google.cloud.datalabeling.v1beta1.DeleteAnnotatedDatasetRequest request) {
       return blockingUnaryCall(
           getChannel(), getDeleteAnnotatedDatasetMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Starts a labeling task for image. The type of image labeling task is
-     * configured by feature in the request.
-     * </pre>
-     */
+    /** */
     public com.google.longrunning.Operation labelImage(
         com.google.cloud.datalabeling.v1beta1.LabelImageRequest request) {
       return blockingUnaryCall(getChannel(), getLabelImageMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Starts a labeling task for video. The type of video labeling task is
-     * configured by feature in the request.
-     * </pre>
-     */
+    /** */
     public com.google.longrunning.Operation labelVideo(
         com.google.cloud.datalabeling.v1beta1.LabelVideoRequest request) {
       return blockingUnaryCall(getChannel(), getLabelVideoMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Starts a labeling task for text. The type of text labeling task is
-     * configured by feature in the request.
-     * </pre>
-     */
+    /** */
     public com.google.longrunning.Operation labelText(
         com.google.cloud.datalabeling.v1beta1.LabelTextRequest request) {
       return blockingUnaryCall(getChannel(), getLabelTextMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets an example by resource name, including both data and annotation.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.datalabeling.v1beta1.Example getExample(
         com.google.cloud.datalabeling.v1beta1.GetExampleRequest request) {
       return blockingUnaryCall(getChannel(), getGetExampleMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists examples in an annotated dataset. Pagination is supported.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.datalabeling.v1beta1.ListExamplesResponse listExamples(
         com.google.cloud.datalabeling.v1beta1.ListExamplesRequest request) {
       return blockingUnaryCall(getChannel(), getListExamplesMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates an annotation spec set by providing a set of labels.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.datalabeling.v1beta1.AnnotationSpecSet createAnnotationSpecSet(
         com.google.cloud.datalabeling.v1beta1.CreateAnnotationSpecSetRequest request) {
       return blockingUnaryCall(
           getChannel(), getCreateAnnotationSpecSetMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets an annotation spec set by resource name.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.datalabeling.v1beta1.AnnotationSpecSet getAnnotationSpecSet(
         com.google.cloud.datalabeling.v1beta1.GetAnnotationSpecSetRequest request) {
       return blockingUnaryCall(
           getChannel(), getGetAnnotationSpecSetMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists annotation spec sets for a project. Pagination is supported.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.datalabeling.v1beta1.ListAnnotationSpecSetsResponse
         listAnnotationSpecSets(
             com.google.cloud.datalabeling.v1beta1.ListAnnotationSpecSetsRequest request) {
@@ -3287,105 +2694,54 @@ public final class DataLabelingServiceGrpc {
           getChannel(), getListAnnotationSpecSetsMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes an annotation spec set by resource name.
-     * </pre>
-     */
+    /** */
     public com.google.protobuf.Empty deleteAnnotationSpecSet(
         com.google.cloud.datalabeling.v1beta1.DeleteAnnotationSpecSetRequest request) {
       return blockingUnaryCall(
           getChannel(), getDeleteAnnotationSpecSetMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates an instruction for how data should be labeled.
-     * </pre>
-     */
+    /** */
     public com.google.longrunning.Operation createInstruction(
         com.google.cloud.datalabeling.v1beta1.CreateInstructionRequest request) {
       return blockingUnaryCall(
           getChannel(), getCreateInstructionMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets an instruction by resource name.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.datalabeling.v1beta1.Instruction getInstruction(
         com.google.cloud.datalabeling.v1beta1.GetInstructionRequest request) {
       return blockingUnaryCall(getChannel(), getGetInstructionMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists instructions for a project. Pagination is supported.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.datalabeling.v1beta1.ListInstructionsResponse listInstructions(
         com.google.cloud.datalabeling.v1beta1.ListInstructionsRequest request) {
       return blockingUnaryCall(
           getChannel(), getListInstructionsMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes an instruction object by resource name.
-     * </pre>
-     */
+    /** */
     public com.google.protobuf.Empty deleteInstruction(
         com.google.cloud.datalabeling.v1beta1.DeleteInstructionRequest request) {
       return blockingUnaryCall(
           getChannel(), getDeleteInstructionMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets an evaluation by resource name (to search, use
-     * [projects.evaluations.search][google.cloud.datalabeling.v1beta1.DataLabelingService.SearchEvaluations]).
-     * </pre>
-     */
+    /** */
     public com.google.cloud.datalabeling.v1beta1.Evaluation getEvaluation(
         com.google.cloud.datalabeling.v1beta1.GetEvaluationRequest request) {
       return blockingUnaryCall(getChannel(), getGetEvaluationMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Searches [evaluations][google.cloud.datalabeling.v1beta1.Evaluation] within a project.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.datalabeling.v1beta1.SearchEvaluationsResponse searchEvaluations(
         com.google.cloud.datalabeling.v1beta1.SearchEvaluationsRequest request) {
       return blockingUnaryCall(
           getChannel(), getSearchEvaluationsMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Searches example comparisons from an evaluation. The return format is a
-     * list of example comparisons that show ground truth and prediction(s) for
-     * a single input. Search by providing an evaluation ID.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.datalabeling.v1beta1.SearchExampleComparisonsResponse
         searchExampleComparisons(
             com.google.cloud.datalabeling.v1beta1.SearchExampleComparisonsRequest request) {
@@ -3393,98 +2749,49 @@ public final class DataLabelingServiceGrpc {
           getChannel(), getSearchExampleComparisonsMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates an evaluation job.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.datalabeling.v1beta1.EvaluationJob createEvaluationJob(
         com.google.cloud.datalabeling.v1beta1.CreateEvaluationJobRequest request) {
       return blockingUnaryCall(
           getChannel(), getCreateEvaluationJobMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Updates an evaluation job. You can only update certain fields of the job's
-     * [EvaluationJobConfig][google.cloud.datalabeling.v1beta1.EvaluationJobConfig]: `humanAnnotationConfig.instruction`,
-     * `exampleCount`, and `exampleSamplePercentage`.
-     * If you want to change any other aspect of the evaluation job, you must
-     * delete the job and create a new one.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.datalabeling.v1beta1.EvaluationJob updateEvaluationJob(
         com.google.cloud.datalabeling.v1beta1.UpdateEvaluationJobRequest request) {
       return blockingUnaryCall(
           getChannel(), getUpdateEvaluationJobMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets an evaluation job by resource name.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.datalabeling.v1beta1.EvaluationJob getEvaluationJob(
         com.google.cloud.datalabeling.v1beta1.GetEvaluationJobRequest request) {
       return blockingUnaryCall(
           getChannel(), getGetEvaluationJobMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Pauses an evaluation job. Pausing an evaluation job that is already in a
-     * `PAUSED` state is a no-op.
-     * </pre>
-     */
+    /** */
     public com.google.protobuf.Empty pauseEvaluationJob(
         com.google.cloud.datalabeling.v1beta1.PauseEvaluationJobRequest request) {
       return blockingUnaryCall(
           getChannel(), getPauseEvaluationJobMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Resumes a paused evaluation job. A deleted evaluation job can't be resumed.
-     * Resuming a running or scheduled evaluation job is a no-op.
-     * </pre>
-     */
+    /** */
     public com.google.protobuf.Empty resumeEvaluationJob(
         com.google.cloud.datalabeling.v1beta1.ResumeEvaluationJobRequest request) {
       return blockingUnaryCall(
           getChannel(), getResumeEvaluationJobMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Stops and deletes an evaluation job.
-     * </pre>
-     */
+    /** */
     public com.google.protobuf.Empty deleteEvaluationJob(
         com.google.cloud.datalabeling.v1beta1.DeleteEvaluationJobRequest request) {
       return blockingUnaryCall(
           getChannel(), getDeleteEvaluationJobMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists all evaluation jobs within a project with possible filters.
-     * Pagination is supported.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.datalabeling.v1beta1.ListEvaluationJobsResponse listEvaluationJobs(
         com.google.cloud.datalabeling.v1beta1.ListEvaluationJobsRequest request) {
       return blockingUnaryCall(
@@ -3492,13 +2799,7 @@ public final class DataLabelingServiceGrpc {
     }
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * Service for the AI Platform Data Labeling API.
-   * </pre>
-   */
+  /** */
   public static final class DataLabelingServiceFutureStub
       extends io.grpc.stub.AbstractFutureStub<DataLabelingServiceFutureStub> {
     private DataLabelingServiceFutureStub(
@@ -3512,13 +2813,7 @@ public final class DataLabelingServiceGrpc {
       return new DataLabelingServiceFutureStub(channel, callOptions);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates dataset. If success return a Dataset resource.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.datalabeling.v1beta1.Dataset>
         createDataset(com.google.cloud.datalabeling.v1beta1.CreateDatasetRequest request) {
@@ -3526,13 +2821,7 @@ public final class DataLabelingServiceGrpc {
           getChannel().newCall(getCreateDatasetMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets dataset by resource name.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.datalabeling.v1beta1.Dataset>
         getDataset(com.google.cloud.datalabeling.v1beta1.GetDatasetRequest request) {
@@ -3540,13 +2829,7 @@ public final class DataLabelingServiceGrpc {
           getChannel().newCall(getGetDatasetMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists datasets under a project. Pagination is supported.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.datalabeling.v1beta1.ListDatasetsResponse>
         listDatasets(com.google.cloud.datalabeling.v1beta1.ListDatasetsRequest request) {
@@ -3554,57 +2837,28 @@ public final class DataLabelingServiceGrpc {
           getChannel().newCall(getListDatasetsMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes a dataset by resource name.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<com.google.protobuf.Empty>
         deleteDataset(com.google.cloud.datalabeling.v1beta1.DeleteDatasetRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getDeleteDatasetMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Imports data into dataset based on source locations defined in request.
-     * It can be called multiple times for the same dataset. Each dataset can
-     * only have one long running operation running on it. For example, no
-     * labeling task (also long running operation) can be started while
-     * importing is still ongoing. Vice versa.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<com.google.longrunning.Operation>
         importData(com.google.cloud.datalabeling.v1beta1.ImportDataRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getImportDataMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Exports data and annotations from dataset.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<com.google.longrunning.Operation>
         exportData(com.google.cloud.datalabeling.v1beta1.ExportDataRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getExportDataMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets a data item in a dataset by resource name. This API can be
-     * called after data are imported into dataset.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.datalabeling.v1beta1.DataItem>
         getDataItem(com.google.cloud.datalabeling.v1beta1.GetDataItemRequest request) {
@@ -3612,14 +2866,7 @@ public final class DataLabelingServiceGrpc {
           getChannel().newCall(getGetDataItemMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists data items in a dataset. This API can be called after data
-     * are imported into dataset. Pagination is supported.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.datalabeling.v1beta1.ListDataItemsResponse>
         listDataItems(com.google.cloud.datalabeling.v1beta1.ListDataItemsRequest request) {
@@ -3627,13 +2874,7 @@ public final class DataLabelingServiceGrpc {
           getChannel().newCall(getListDataItemsMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets an annotated dataset by resource name.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.datalabeling.v1beta1.AnnotatedDataset>
         getAnnotatedDataset(
@@ -3642,13 +2883,7 @@ public final class DataLabelingServiceGrpc {
           getChannel().newCall(getGetAnnotatedDatasetMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists annotated datasets for a dataset. Pagination is supported.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.datalabeling.v1beta1.ListAnnotatedDatasetsResponse>
         listAnnotatedDatasets(
@@ -3657,13 +2892,7 @@ public final class DataLabelingServiceGrpc {
           getChannel().newCall(getListAnnotatedDatasetsMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes an annotated dataset by resource name.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<com.google.protobuf.Empty>
         deleteAnnotatedDataset(
             com.google.cloud.datalabeling.v1beta1.DeleteAnnotatedDatasetRequest request) {
@@ -3671,54 +2900,27 @@ public final class DataLabelingServiceGrpc {
           getChannel().newCall(getDeleteAnnotatedDatasetMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Starts a labeling task for image. The type of image labeling task is
-     * configured by feature in the request.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<com.google.longrunning.Operation>
         labelImage(com.google.cloud.datalabeling.v1beta1.LabelImageRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getLabelImageMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Starts a labeling task for video. The type of video labeling task is
-     * configured by feature in the request.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<com.google.longrunning.Operation>
         labelVideo(com.google.cloud.datalabeling.v1beta1.LabelVideoRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getLabelVideoMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Starts a labeling task for text. The type of text labeling task is
-     * configured by feature in the request.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<com.google.longrunning.Operation>
         labelText(com.google.cloud.datalabeling.v1beta1.LabelTextRequest request) {
       return futureUnaryCall(getChannel().newCall(getLabelTextMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets an example by resource name, including both data and annotation.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.datalabeling.v1beta1.Example>
         getExample(com.google.cloud.datalabeling.v1beta1.GetExampleRequest request) {
@@ -3726,13 +2928,7 @@ public final class DataLabelingServiceGrpc {
           getChannel().newCall(getGetExampleMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists examples in an annotated dataset. Pagination is supported.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.datalabeling.v1beta1.ListExamplesResponse>
         listExamples(com.google.cloud.datalabeling.v1beta1.ListExamplesRequest request) {
@@ -3740,13 +2936,7 @@ public final class DataLabelingServiceGrpc {
           getChannel().newCall(getListExamplesMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates an annotation spec set by providing a set of labels.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.datalabeling.v1beta1.AnnotationSpecSet>
         createAnnotationSpecSet(
@@ -3755,13 +2945,7 @@ public final class DataLabelingServiceGrpc {
           getChannel().newCall(getCreateAnnotationSpecSetMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets an annotation spec set by resource name.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.datalabeling.v1beta1.AnnotationSpecSet>
         getAnnotationSpecSet(
@@ -3770,13 +2954,7 @@ public final class DataLabelingServiceGrpc {
           getChannel().newCall(getGetAnnotationSpecSetMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists annotation spec sets for a project. Pagination is supported.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.datalabeling.v1beta1.ListAnnotationSpecSetsResponse>
         listAnnotationSpecSets(
@@ -3785,13 +2963,7 @@ public final class DataLabelingServiceGrpc {
           getChannel().newCall(getListAnnotationSpecSetsMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes an annotation spec set by resource name.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<com.google.protobuf.Empty>
         deleteAnnotationSpecSet(
             com.google.cloud.datalabeling.v1beta1.DeleteAnnotationSpecSetRequest request) {
@@ -3799,26 +2971,14 @@ public final class DataLabelingServiceGrpc {
           getChannel().newCall(getDeleteAnnotationSpecSetMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates an instruction for how data should be labeled.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<com.google.longrunning.Operation>
         createInstruction(com.google.cloud.datalabeling.v1beta1.CreateInstructionRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getCreateInstructionMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets an instruction by resource name.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.datalabeling.v1beta1.Instruction>
         getInstruction(com.google.cloud.datalabeling.v1beta1.GetInstructionRequest request) {
@@ -3826,13 +2986,7 @@ public final class DataLabelingServiceGrpc {
           getChannel().newCall(getGetInstructionMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists instructions for a project. Pagination is supported.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.datalabeling.v1beta1.ListInstructionsResponse>
         listInstructions(com.google.cloud.datalabeling.v1beta1.ListInstructionsRequest request) {
@@ -3840,27 +2994,14 @@ public final class DataLabelingServiceGrpc {
           getChannel().newCall(getListInstructionsMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes an instruction object by resource name.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<com.google.protobuf.Empty>
         deleteInstruction(com.google.cloud.datalabeling.v1beta1.DeleteInstructionRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getDeleteInstructionMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets an evaluation by resource name (to search, use
-     * [projects.evaluations.search][google.cloud.datalabeling.v1beta1.DataLabelingService.SearchEvaluations]).
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.datalabeling.v1beta1.Evaluation>
         getEvaluation(com.google.cloud.datalabeling.v1beta1.GetEvaluationRequest request) {
@@ -3868,13 +3009,7 @@ public final class DataLabelingServiceGrpc {
           getChannel().newCall(getGetEvaluationMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Searches [evaluations][google.cloud.datalabeling.v1beta1.Evaluation] within a project.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.datalabeling.v1beta1.SearchEvaluationsResponse>
         searchEvaluations(com.google.cloud.datalabeling.v1beta1.SearchEvaluationsRequest request) {
@@ -3882,15 +3017,7 @@ public final class DataLabelingServiceGrpc {
           getChannel().newCall(getSearchEvaluationsMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Searches example comparisons from an evaluation. The return format is a
-     * list of example comparisons that show ground truth and prediction(s) for
-     * a single input. Search by providing an evaluation ID.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.datalabeling.v1beta1.SearchExampleComparisonsResponse>
         searchExampleComparisons(
@@ -3899,13 +3026,7 @@ public final class DataLabelingServiceGrpc {
           getChannel().newCall(getSearchExampleComparisonsMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates an evaluation job.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.datalabeling.v1beta1.EvaluationJob>
         createEvaluationJob(
@@ -3914,17 +3035,7 @@ public final class DataLabelingServiceGrpc {
           getChannel().newCall(getCreateEvaluationJobMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Updates an evaluation job. You can only update certain fields of the job's
-     * [EvaluationJobConfig][google.cloud.datalabeling.v1beta1.EvaluationJobConfig]: `humanAnnotationConfig.instruction`,
-     * `exampleCount`, and `exampleSamplePercentage`.
-     * If you want to change any other aspect of the evaluation job, you must
-     * delete the job and create a new one.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.datalabeling.v1beta1.EvaluationJob>
         updateEvaluationJob(
@@ -3933,13 +3044,7 @@ public final class DataLabelingServiceGrpc {
           getChannel().newCall(getUpdateEvaluationJobMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets an evaluation job by resource name.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.datalabeling.v1beta1.EvaluationJob>
         getEvaluationJob(com.google.cloud.datalabeling.v1beta1.GetEvaluationJobRequest request) {
@@ -3947,14 +3052,7 @@ public final class DataLabelingServiceGrpc {
           getChannel().newCall(getGetEvaluationJobMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Pauses an evaluation job. Pausing an evaluation job that is already in a
-     * `PAUSED` state is a no-op.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<com.google.protobuf.Empty>
         pauseEvaluationJob(
             com.google.cloud.datalabeling.v1beta1.PauseEvaluationJobRequest request) {
@@ -3962,14 +3060,7 @@ public final class DataLabelingServiceGrpc {
           getChannel().newCall(getPauseEvaluationJobMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Resumes a paused evaluation job. A deleted evaluation job can't be resumed.
-     * Resuming a running or scheduled evaluation job is a no-op.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<com.google.protobuf.Empty>
         resumeEvaluationJob(
             com.google.cloud.datalabeling.v1beta1.ResumeEvaluationJobRequest request) {
@@ -3977,13 +3068,7 @@ public final class DataLabelingServiceGrpc {
           getChannel().newCall(getResumeEvaluationJobMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Stops and deletes an evaluation job.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<com.google.protobuf.Empty>
         deleteEvaluationJob(
             com.google.cloud.datalabeling.v1beta1.DeleteEvaluationJobRequest request) {
@@ -3991,14 +3076,7 @@ public final class DataLabelingServiceGrpc {
           getChannel().newCall(getDeleteEvaluationJobMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Lists all evaluation jobs within a project with possible filters.
-     * Pagination is supported.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.datalabeling.v1beta1.ListEvaluationJobsResponse>
         listEvaluationJobs(
