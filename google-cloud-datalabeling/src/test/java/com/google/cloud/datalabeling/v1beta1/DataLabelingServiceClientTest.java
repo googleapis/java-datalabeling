@@ -99,7 +99,7 @@ public class DataLabelingServiceClientTest {
     Dataset expectedResponse =
         Dataset.newBuilder()
             .setName(DatasetName.of("[PROJECT]", "[DATASET]").toString())
-            .setDisplayName("display_name1615086568")
+            .setDisplayName("displayName1714148973")
             .setDescription("description-1724546052")
             .setCreateTime(Timestamp.newBuilder().build())
             .addAllInputConfigs(new ArrayList<InputConfig>())
@@ -146,7 +146,7 @@ public class DataLabelingServiceClientTest {
     Dataset expectedResponse =
         Dataset.newBuilder()
             .setName(DatasetName.of("[PROJECT]", "[DATASET]").toString())
-            .setDisplayName("display_name1615086568")
+            .setDisplayName("displayName1714148973")
             .setDescription("description-1724546052")
             .setCreateTime(Timestamp.newBuilder().build())
             .addAllInputConfigs(new ArrayList<InputConfig>())
@@ -193,7 +193,7 @@ public class DataLabelingServiceClientTest {
     Dataset expectedResponse =
         Dataset.newBuilder()
             .setName(DatasetName.of("[PROJECT]", "[DATASET]").toString())
-            .setDisplayName("display_name1615086568")
+            .setDisplayName("displayName1714148973")
             .setDescription("description-1724546052")
             .setCreateTime(Timestamp.newBuilder().build())
             .addAllInputConfigs(new ArrayList<InputConfig>())
@@ -237,7 +237,7 @@ public class DataLabelingServiceClientTest {
     Dataset expectedResponse =
         Dataset.newBuilder()
             .setName(DatasetName.of("[PROJECT]", "[DATASET]").toString())
-            .setDisplayName("display_name1615086568")
+            .setDisplayName("displayName1714148973")
             .setDescription("description-1724546052")
             .setCreateTime(Timestamp.newBuilder().build())
             .addAllInputConfigs(new ArrayList<InputConfig>())
@@ -621,7 +621,7 @@ public class DataLabelingServiceClientTest {
     mockDataLabelingService.addResponse(resultOperation);
 
     DatasetName name = DatasetName.of("[PROJECT]", "[DATASET]");
-    String annotatedDataset = "annotated_dataset-1407812655";
+    String annotatedDataset = "annotatedDataset-246761280";
     String filter = "filter-1274492040";
     OutputConfig outputConfig = OutputConfig.newBuilder().build();
 
@@ -650,7 +650,7 @@ public class DataLabelingServiceClientTest {
 
     try {
       DatasetName name = DatasetName.of("[PROJECT]", "[DATASET]");
-      String annotatedDataset = "annotated_dataset-1407812655";
+      String annotatedDataset = "annotatedDataset-246761280";
       String filter = "filter-1274492040";
       OutputConfig outputConfig = OutputConfig.newBuilder().build();
       client.exportDataAsync(name, annotatedDataset, filter, outputConfig).get();
@@ -743,7 +743,7 @@ public class DataLabelingServiceClientTest {
     mockDataLabelingService.addResponse(resultOperation);
 
     String name = "name3373707";
-    String annotatedDataset = "annotated_dataset-1407812655";
+    String annotatedDataset = "annotatedDataset-246761280";
     String filter = "filter-1274492040";
     OutputConfig outputConfig = OutputConfig.newBuilder().build();
 
@@ -772,7 +772,7 @@ public class DataLabelingServiceClientTest {
 
     try {
       String name = "name3373707";
-      String annotatedDataset = "annotated_dataset-1407812655";
+      String annotatedDataset = "annotatedDataset-246761280";
       String filter = "filter-1274492040";
       OutputConfig outputConfig = OutputConfig.newBuilder().build();
       client.exportDataAsync(name, annotatedDataset, filter, outputConfig).get();
@@ -960,7 +960,7 @@ public class DataLabelingServiceClientTest {
         AnnotatedDataset.newBuilder()
             .setName(
                 AnnotatedDatasetName.of("[PROJECT]", "[DATASET]", "[ANNOTATED_DATASET]").toString())
-            .setDisplayName("display_name1615086568")
+            .setDisplayName("displayName1714148973")
             .setDescription("description-1724546052")
             .setExampleCount(1517063674)
             .setCompletedExampleCount(-612567290)
@@ -1009,7 +1009,7 @@ public class DataLabelingServiceClientTest {
         AnnotatedDataset.newBuilder()
             .setName(
                 AnnotatedDatasetName.of("[PROJECT]", "[DATASET]", "[ANNOTATED_DATASET]").toString())
-            .setDisplayName("display_name1615086568")
+            .setDisplayName("displayName1714148973")
             .setDescription("description-1724546052")
             .setExampleCount(1517063674)
             .setCompletedExampleCount(-612567290)
@@ -1198,7 +1198,7 @@ public class DataLabelingServiceClientTest {
         AnnotatedDataset.newBuilder()
             .setName(
                 AnnotatedDatasetName.of("[PROJECT]", "[DATASET]", "[ANNOTATED_DATASET]").toString())
-            .setDisplayName("display_name1615086568")
+            .setDisplayName("displayName1714148973")
             .setDescription("description-1724546052")
             .setExampleCount(1517063674)
             .setCompletedExampleCount(-612567290)
@@ -1259,7 +1259,7 @@ public class DataLabelingServiceClientTest {
         AnnotatedDataset.newBuilder()
             .setName(
                 AnnotatedDatasetName.of("[PROJECT]", "[DATASET]", "[ANNOTATED_DATASET]").toString())
-            .setDisplayName("display_name1615086568")
+            .setDisplayName("displayName1714148973")
             .setDescription("description-1724546052")
             .setExampleCount(1517063674)
             .setCompletedExampleCount(-612567290)
@@ -1320,7 +1320,7 @@ public class DataLabelingServiceClientTest {
         AnnotatedDataset.newBuilder()
             .setName(
                 AnnotatedDatasetName.of("[PROJECT]", "[DATASET]", "[ANNOTATED_DATASET]").toString())
-            .setDisplayName("display_name1615086568")
+            .setDisplayName("displayName1714148973")
             .setDescription("description-1724546052")
             .setExampleCount(1517063674)
             .setCompletedExampleCount(-612567290)
@@ -1381,7 +1381,7 @@ public class DataLabelingServiceClientTest {
         AnnotatedDataset.newBuilder()
             .setName(
                 AnnotatedDatasetName.of("[PROJECT]", "[DATASET]", "[ANNOTATED_DATASET]").toString())
-            .setDisplayName("display_name1615086568")
+            .setDisplayName("displayName1714148973")
             .setDescription("description-1724546052")
             .setExampleCount(1517063674)
             .setCompletedExampleCount(-612567290)
@@ -1442,7 +1442,7 @@ public class DataLabelingServiceClientTest {
         AnnotatedDataset.newBuilder()
             .setName(
                 AnnotatedDatasetName.of("[PROJECT]", "[DATASET]", "[ANNOTATED_DATASET]").toString())
-            .setDisplayName("display_name1615086568")
+            .setDisplayName("displayName1714148973")
             .setDescription("description-1724546052")
             .setExampleCount(1517063674)
             .setCompletedExampleCount(-612567290)
@@ -1503,7 +1503,7 @@ public class DataLabelingServiceClientTest {
         AnnotatedDataset.newBuilder()
             .setName(
                 AnnotatedDatasetName.of("[PROJECT]", "[DATASET]", "[ANNOTATED_DATASET]").toString())
-            .setDisplayName("display_name1615086568")
+            .setDisplayName("displayName1714148973")
             .setDescription("description-1724546052")
             .setExampleCount(1517063674)
             .setCompletedExampleCount(-612567290)
@@ -1748,7 +1748,7 @@ public class DataLabelingServiceClientTest {
     AnnotationSpecSet expectedResponse =
         AnnotationSpecSet.newBuilder()
             .setName(AnnotationSpecSetName.of("[PROJECT]", "[ANNOTATION_SPEC_SET]").toString())
-            .setDisplayName("display_name1615086568")
+            .setDisplayName("displayName1714148973")
             .setDescription("description-1724546052")
             .addAllAnnotationSpecs(new ArrayList<AnnotationSpec>())
             .addAllBlockingResources(new ArrayList<String>())
@@ -1794,7 +1794,7 @@ public class DataLabelingServiceClientTest {
     AnnotationSpecSet expectedResponse =
         AnnotationSpecSet.newBuilder()
             .setName(AnnotationSpecSetName.of("[PROJECT]", "[ANNOTATION_SPEC_SET]").toString())
-            .setDisplayName("display_name1615086568")
+            .setDisplayName("displayName1714148973")
             .setDescription("description-1724546052")
             .addAllAnnotationSpecs(new ArrayList<AnnotationSpec>())
             .addAllBlockingResources(new ArrayList<String>())
@@ -1840,7 +1840,7 @@ public class DataLabelingServiceClientTest {
     AnnotationSpecSet expectedResponse =
         AnnotationSpecSet.newBuilder()
             .setName(AnnotationSpecSetName.of("[PROJECT]", "[ANNOTATION_SPEC_SET]").toString())
-            .setDisplayName("display_name1615086568")
+            .setDisplayName("displayName1714148973")
             .setDescription("description-1724546052")
             .addAllAnnotationSpecs(new ArrayList<AnnotationSpec>())
             .addAllBlockingResources(new ArrayList<String>())
@@ -1883,7 +1883,7 @@ public class DataLabelingServiceClientTest {
     AnnotationSpecSet expectedResponse =
         AnnotationSpecSet.newBuilder()
             .setName(AnnotationSpecSetName.of("[PROJECT]", "[ANNOTATION_SPEC_SET]").toString())
-            .setDisplayName("display_name1615086568")
+            .setDisplayName("displayName1714148973")
             .setDescription("description-1724546052")
             .addAllAnnotationSpecs(new ArrayList<AnnotationSpec>())
             .addAllBlockingResources(new ArrayList<String>())
@@ -2094,7 +2094,7 @@ public class DataLabelingServiceClientTest {
     Instruction expectedResponse =
         Instruction.newBuilder()
             .setName(InstructionName.of("[PROJECT]", "[INSTRUCTION]").toString())
-            .setDisplayName("display_name1615086568")
+            .setDisplayName("displayName1714148973")
             .setDescription("description-1724546052")
             .setCreateTime(Timestamp.newBuilder().build())
             .setUpdateTime(Timestamp.newBuilder().build())
@@ -2150,7 +2150,7 @@ public class DataLabelingServiceClientTest {
     Instruction expectedResponse =
         Instruction.newBuilder()
             .setName(InstructionName.of("[PROJECT]", "[INSTRUCTION]").toString())
-            .setDisplayName("display_name1615086568")
+            .setDisplayName("displayName1714148973")
             .setDescription("description-1724546052")
             .setCreateTime(Timestamp.newBuilder().build())
             .setUpdateTime(Timestamp.newBuilder().build())
@@ -2206,7 +2206,7 @@ public class DataLabelingServiceClientTest {
     Instruction expectedResponse =
         Instruction.newBuilder()
             .setName(InstructionName.of("[PROJECT]", "[INSTRUCTION]").toString())
-            .setDisplayName("display_name1615086568")
+            .setDisplayName("displayName1714148973")
             .setDescription("description-1724546052")
             .setCreateTime(Timestamp.newBuilder().build())
             .setUpdateTime(Timestamp.newBuilder().build())
@@ -2251,7 +2251,7 @@ public class DataLabelingServiceClientTest {
     Instruction expectedResponse =
         Instruction.newBuilder()
             .setName(InstructionName.of("[PROJECT]", "[INSTRUCTION]").toString())
-            .setDisplayName("display_name1615086568")
+            .setDisplayName("displayName1714148973")
             .setDescription("description-1724546052")
             .setCreateTime(Timestamp.newBuilder().build())
             .setUpdateTime(Timestamp.newBuilder().build())
@@ -2736,9 +2736,9 @@ public class DataLabelingServiceClientTest {
             .setName(EvaluationJobName.of("[PROJECT]", "[EVALUATION_JOB]").toString())
             .setDescription("description-1724546052")
             .setSchedule("schedule-697920873")
-            .setModelVersion("model_version-1669102142")
+            .setModelVersion("modelVersion212437359")
             .setEvaluationJobConfig(EvaluationJobConfig.newBuilder().build())
-            .setAnnotationSpecSet("annotation_spec_set1881405678")
+            .setAnnotationSpecSet("annotationSpecSet-2015725448")
             .setLabelMissingGroundTruth(true)
             .addAllAttempts(new ArrayList<Attempt>())
             .setCreateTime(Timestamp.newBuilder().build())
@@ -2785,9 +2785,9 @@ public class DataLabelingServiceClientTest {
             .setName(EvaluationJobName.of("[PROJECT]", "[EVALUATION_JOB]").toString())
             .setDescription("description-1724546052")
             .setSchedule("schedule-697920873")
-            .setModelVersion("model_version-1669102142")
+            .setModelVersion("modelVersion212437359")
             .setEvaluationJobConfig(EvaluationJobConfig.newBuilder().build())
-            .setAnnotationSpecSet("annotation_spec_set1881405678")
+            .setAnnotationSpecSet("annotationSpecSet-2015725448")
             .setLabelMissingGroundTruth(true)
             .addAllAttempts(new ArrayList<Attempt>())
             .setCreateTime(Timestamp.newBuilder().build())
@@ -2834,9 +2834,9 @@ public class DataLabelingServiceClientTest {
             .setName(EvaluationJobName.of("[PROJECT]", "[EVALUATION_JOB]").toString())
             .setDescription("description-1724546052")
             .setSchedule("schedule-697920873")
-            .setModelVersion("model_version-1669102142")
+            .setModelVersion("modelVersion212437359")
             .setEvaluationJobConfig(EvaluationJobConfig.newBuilder().build())
-            .setAnnotationSpecSet("annotation_spec_set1881405678")
+            .setAnnotationSpecSet("annotationSpecSet-2015725448")
             .setLabelMissingGroundTruth(true)
             .addAllAttempts(new ArrayList<Attempt>())
             .setCreateTime(Timestamp.newBuilder().build())
@@ -2883,9 +2883,9 @@ public class DataLabelingServiceClientTest {
             .setName(EvaluationJobName.of("[PROJECT]", "[EVALUATION_JOB]").toString())
             .setDescription("description-1724546052")
             .setSchedule("schedule-697920873")
-            .setModelVersion("model_version-1669102142")
+            .setModelVersion("modelVersion212437359")
             .setEvaluationJobConfig(EvaluationJobConfig.newBuilder().build())
-            .setAnnotationSpecSet("annotation_spec_set1881405678")
+            .setAnnotationSpecSet("annotationSpecSet-2015725448")
             .setLabelMissingGroundTruth(true)
             .addAllAttempts(new ArrayList<Attempt>())
             .setCreateTime(Timestamp.newBuilder().build())
@@ -2929,9 +2929,9 @@ public class DataLabelingServiceClientTest {
             .setName(EvaluationJobName.of("[PROJECT]", "[EVALUATION_JOB]").toString())
             .setDescription("description-1724546052")
             .setSchedule("schedule-697920873")
-            .setModelVersion("model_version-1669102142")
+            .setModelVersion("modelVersion212437359")
             .setEvaluationJobConfig(EvaluationJobConfig.newBuilder().build())
-            .setAnnotationSpecSet("annotation_spec_set1881405678")
+            .setAnnotationSpecSet("annotationSpecSet-2015725448")
             .setLabelMissingGroundTruth(true)
             .addAllAttempts(new ArrayList<Attempt>())
             .setCreateTime(Timestamp.newBuilder().build())
