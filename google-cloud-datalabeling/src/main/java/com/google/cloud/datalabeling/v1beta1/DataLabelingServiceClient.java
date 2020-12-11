@@ -381,7 +381,7 @@ public class DataLabelingServiceClient implements BackgroundResource {
    *
    * @param name Required. Dataset resource name, format:
    *     projects/{project_id}/datasets/{dataset_id}
-   * @param input_config Required. Specify the input source of the data.
+   * @param inputConfig Required. Specify the input source of the data.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final OperationFuture<ImportDataOperationResponse, ImportDataOperationMetadata>
@@ -403,7 +403,7 @@ public class DataLabelingServiceClient implements BackgroundResource {
    *
    * @param name Required. Dataset resource name, format:
    *     projects/{project_id}/datasets/{dataset_id}
-   * @param input_config Required. Specify the input source of the data.
+   * @param inputConfig Required. Specify the input source of the data.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final OperationFuture<ImportDataOperationResponse, ImportDataOperationMetadata>
@@ -462,11 +462,11 @@ public class DataLabelingServiceClient implements BackgroundResource {
    *
    * @param name Required. Dataset resource name, format:
    *     projects/{project_id}/datasets/{dataset_id}
-   * @param annotated_dataset Required. Annotated dataset resource name. DataItem in Dataset and
+   * @param annotatedDataset Required. Annotated dataset resource name. DataItem in Dataset and
    *     their annotations in specified annotated dataset will be exported. It's in format of
    *     projects/{project_id}/datasets/{dataset_id}/annotatedDatasets/ {annotated_dataset_id}
    * @param filter Optional. Filter is not supported at this moment.
-   * @param output_config Required. Specify the output destination.
+   * @param outputConfig Required. Specify the output destination.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final OperationFuture<ExportDataOperationResponse, ExportDataOperationMetadata>
@@ -491,11 +491,11 @@ public class DataLabelingServiceClient implements BackgroundResource {
    *
    * @param name Required. Dataset resource name, format:
    *     projects/{project_id}/datasets/{dataset_id}
-   * @param annotated_dataset Required. Annotated dataset resource name. DataItem in Dataset and
+   * @param annotatedDataset Required. Annotated dataset resource name. DataItem in Dataset and
    *     their annotations in specified annotated dataset will be exported. It's in format of
    *     projects/{project_id}/datasets/{dataset_id}/annotatedDatasets/ {annotated_dataset_id}
    * @param filter Optional. Filter is not supported at this moment.
-   * @param output_config Required. Specify the output destination.
+   * @param outputConfig Required. Specify the output destination.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final OperationFuture<ExportDataOperationResponse, ExportDataOperationMetadata>
@@ -517,11 +517,11 @@ public class DataLabelingServiceClient implements BackgroundResource {
    *
    * @param name Required. Dataset resource name, format:
    *     projects/{project_id}/datasets/{dataset_id}
-   * @param annotated_dataset Required. Annotated dataset resource name. DataItem in Dataset and
+   * @param annotatedDataset Required. Annotated dataset resource name. DataItem in Dataset and
    *     their annotations in specified annotated dataset will be exported. It's in format of
    *     projects/{project_id}/datasets/{dataset_id}/annotatedDatasets/ {annotated_dataset_id}
    * @param filter Optional. Filter is not supported at this moment.
-   * @param output_config Required. Specify the output destination.
+   * @param outputConfig Required. Specify the output destination.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final OperationFuture<ExportDataOperationResponse, ExportDataOperationMetadata>
@@ -546,11 +546,11 @@ public class DataLabelingServiceClient implements BackgroundResource {
    *
    * @param name Required. Dataset resource name, format:
    *     projects/{project_id}/datasets/{dataset_id}
-   * @param annotated_dataset Required. Annotated dataset resource name. DataItem in Dataset and
+   * @param annotatedDataset Required. Annotated dataset resource name. DataItem in Dataset and
    *     their annotations in specified annotated dataset will be exported. It's in format of
    *     projects/{project_id}/datasets/{dataset_id}/annotatedDatasets/ {annotated_dataset_id}
    * @param filter Optional. Filter is not supported at this moment.
-   * @param output_config Required. Specify the output destination.
+   * @param outputConfig Required. Specify the output destination.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final OperationFuture<ExportDataOperationResponse, ExportDataOperationMetadata>
@@ -872,7 +872,7 @@ public class DataLabelingServiceClient implements BackgroundResource {
    *
    * @param parent Required. Name of the dataset to request labeling task, format:
    *     projects/{project_id}/datasets/{dataset_id}
-   * @param basic_config Required. Basic human annotation config.
+   * @param basicConfig Required. Basic human annotation config.
    * @param feature Required. The type of image labeling task.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
@@ -894,7 +894,7 @@ public class DataLabelingServiceClient implements BackgroundResource {
    *
    * @param parent Required. Name of the dataset to request labeling task, format:
    *     projects/{project_id}/datasets/{dataset_id}
-   * @param basic_config Required. Basic human annotation config.
+   * @param basicConfig Required. Basic human annotation config.
    * @param feature Required. The type of image labeling task.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
@@ -952,7 +952,7 @@ public class DataLabelingServiceClient implements BackgroundResource {
    *
    * @param parent Required. Name of the dataset to request labeling task, format:
    *     projects/{project_id}/datasets/{dataset_id}
-   * @param basic_config Required. Basic human annotation config.
+   * @param basicConfig Required. Basic human annotation config.
    * @param feature Required. The type of video labeling task.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
@@ -974,7 +974,7 @@ public class DataLabelingServiceClient implements BackgroundResource {
    *
    * @param parent Required. Name of the dataset to request labeling task, format:
    *     projects/{project_id}/datasets/{dataset_id}
-   * @param basic_config Required. Basic human annotation config.
+   * @param basicConfig Required. Basic human annotation config.
    * @param feature Required. The type of video labeling task.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
@@ -1032,7 +1032,7 @@ public class DataLabelingServiceClient implements BackgroundResource {
    *
    * @param parent Required. Name of the data set to request labeling task, format:
    *     projects/{project_id}/datasets/{dataset_id}
-   * @param basic_config Required. Basic human annotation config.
+   * @param basicConfig Required. Basic human annotation config.
    * @param feature Required. The type of text labeling task.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
@@ -1054,7 +1054,7 @@ public class DataLabelingServiceClient implements BackgroundResource {
    *
    * @param parent Required. Name of the data set to request labeling task, format:
    *     projects/{project_id}/datasets/{dataset_id}
-   * @param basic_config Required. Basic human annotation config.
+   * @param basicConfig Required. Basic human annotation config.
    * @param feature Required. The type of text labeling task.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
@@ -1237,7 +1237,7 @@ public class DataLabelingServiceClient implements BackgroundResource {
    * Creates an annotation spec set by providing a set of labels.
    *
    * @param parent Required. AnnotationSpecSet resource parent, format: projects/{project_id}
-   * @param annotation_spec_set Required. Annotation spec set to create. Annotation specs must be
+   * @param annotationSpecSet Required. Annotation spec set to create. Annotation specs must be
    *     included. Only one annotation spec will be accepted for annotation specs with same
    *     display_name.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
@@ -1257,7 +1257,7 @@ public class DataLabelingServiceClient implements BackgroundResource {
    * Creates an annotation spec set by providing a set of labels.
    *
    * @param parent Required. AnnotationSpecSet resource parent, format: projects/{project_id}
-   * @param annotation_spec_set Required. Annotation spec set to create. Annotation specs must be
+   * @param annotationSpecSet Required. Annotation spec set to create. Annotation specs must be
    *     included. Only one annotation spec will be accepted for annotation specs with same
    *     display_name.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
@@ -2015,9 +2015,9 @@ public class DataLabelingServiceClient implements BackgroundResource {
    * <p>If you want to change any other aspect of the evaluation job, you must delete the job and
    * create a new one.
    *
-   * @param evaluation_job Required. Evaluation job that is going to be updated.
-   * @param update_mask Optional. Mask for which fields to update. You can only provide the
-   *     following fields:
+   * @param evaluationJob Required. Evaluation job that is going to be updated.
+   * @param updateMask Optional. Mask for which fields to update. You can only provide the following
+   *     fields:
    *     <ul>
    *       <li>`evaluationJobConfig.humanAnnotationConfig.instruction`
    *       <li>`evaluationJobConfig.exampleCount`
