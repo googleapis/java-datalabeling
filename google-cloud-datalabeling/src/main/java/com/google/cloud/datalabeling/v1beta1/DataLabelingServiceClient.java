@@ -37,7 +37,6 @@ import com.google.protobuf.Empty;
 import com.google.protobuf.FieldMask;
 import java.io.IOException;
 import java.util.List;
-import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 import javax.annotation.Generated;
 
@@ -173,7 +172,7 @@ public class DataLabelingServiceClient implements BackgroundResource {
   public final Dataset createDataset(ProjectName parent, Dataset dataset) {
     CreateDatasetRequest request =
         CreateDatasetRequest.newBuilder()
-            .setParent(Objects.isNull(parent) ? null : parent.toString())
+            .setParent(parent == null ? null : parent.toString())
             .setDataset(dataset)
             .build();
     return createDataset(request);
@@ -224,9 +223,7 @@ public class DataLabelingServiceClient implements BackgroundResource {
    */
   public final Dataset getDataset(DatasetName name) {
     GetDatasetRequest request =
-        GetDatasetRequest.newBuilder()
-            .setName(Objects.isNull(name) ? null : name.toString())
-            .build();
+        GetDatasetRequest.newBuilder().setName(name == null ? null : name.toString()).build();
     return getDataset(request);
   }
 
@@ -275,7 +272,7 @@ public class DataLabelingServiceClient implements BackgroundResource {
   public final ListDatasetsPagedResponse listDatasets(ProjectName parent, String filter) {
     ListDatasetsRequest request =
         ListDatasetsRequest.newBuilder()
-            .setParent(Objects.isNull(parent) ? null : parent.toString())
+            .setParent(parent == null ? null : parent.toString())
             .setFilter(filter)
             .build();
     return listDatasets(request);
@@ -337,9 +334,7 @@ public class DataLabelingServiceClient implements BackgroundResource {
    */
   public final void deleteDataset(DatasetName name) {
     DeleteDatasetRequest request =
-        DeleteDatasetRequest.newBuilder()
-            .setName(Objects.isNull(name) ? null : name.toString())
-            .build();
+        DeleteDatasetRequest.newBuilder().setName(name == null ? null : name.toString()).build();
     deleteDataset(request);
   }
 
@@ -393,7 +388,7 @@ public class DataLabelingServiceClient implements BackgroundResource {
       importDataAsync(DatasetName name, InputConfig inputConfig) {
     ImportDataRequest request =
         ImportDataRequest.newBuilder()
-            .setName(Objects.isNull(name) ? null : name.toString())
+            .setName(name == null ? null : name.toString())
             .setInputConfig(inputConfig)
             .build();
     return importDataAsync(request);
@@ -482,9 +477,8 @@ public class DataLabelingServiceClient implements BackgroundResource {
           OutputConfig outputConfig) {
     ExportDataRequest request =
         ExportDataRequest.newBuilder()
-            .setName(Objects.isNull(name) ? null : name.toString())
-            .setAnnotatedDataset(
-                Objects.isNull(annotatedDataset) ? null : annotatedDataset.toString())
+            .setName(name == null ? null : name.toString())
+            .setAnnotatedDataset(annotatedDataset == null ? null : annotatedDataset.toString())
             .setFilter(filter)
             .setOutputConfig(outputConfig)
             .build();
@@ -509,7 +503,7 @@ public class DataLabelingServiceClient implements BackgroundResource {
           DatasetName name, String annotatedDataset, String filter, OutputConfig outputConfig) {
     ExportDataRequest request =
         ExportDataRequest.newBuilder()
-            .setName(Objects.isNull(name) ? null : name.toString())
+            .setName(name == null ? null : name.toString())
             .setAnnotatedDataset(annotatedDataset)
             .setFilter(filter)
             .setOutputConfig(outputConfig)
@@ -539,8 +533,7 @@ public class DataLabelingServiceClient implements BackgroundResource {
     ExportDataRequest request =
         ExportDataRequest.newBuilder()
             .setName(name)
-            .setAnnotatedDataset(
-                Objects.isNull(annotatedDataset) ? null : annotatedDataset.toString())
+            .setAnnotatedDataset(annotatedDataset == null ? null : annotatedDataset.toString())
             .setFilter(filter)
             .setOutputConfig(outputConfig)
             .build();
@@ -618,9 +611,7 @@ public class DataLabelingServiceClient implements BackgroundResource {
    */
   public final DataItem getDataItem(DataItemName name) {
     GetDataItemRequest request =
-        GetDataItemRequest.newBuilder()
-            .setName(Objects.isNull(name) ? null : name.toString())
-            .build();
+        GetDataItemRequest.newBuilder().setName(name == null ? null : name.toString()).build();
     return getDataItem(request);
   }
 
@@ -674,7 +665,7 @@ public class DataLabelingServiceClient implements BackgroundResource {
   public final ListDataItemsPagedResponse listDataItems(DatasetName parent, String filter) {
     ListDataItemsRequest request =
         ListDataItemsRequest.newBuilder()
-            .setParent(Objects.isNull(parent) ? null : parent.toString())
+            .setParent(parent == null ? null : parent.toString())
             .setFilter(filter)
             .build();
     return listDataItems(request);
@@ -742,7 +733,7 @@ public class DataLabelingServiceClient implements BackgroundResource {
   public final AnnotatedDataset getAnnotatedDataset(AnnotatedDatasetName name) {
     GetAnnotatedDatasetRequest request =
         GetAnnotatedDatasetRequest.newBuilder()
-            .setName(Objects.isNull(name) ? null : name.toString())
+            .setName(name == null ? null : name.toString())
             .build();
     return getAnnotatedDataset(request);
   }
@@ -796,7 +787,7 @@ public class DataLabelingServiceClient implements BackgroundResource {
       DatasetName parent, String filter) {
     ListAnnotatedDatasetsRequest request =
         ListAnnotatedDatasetsRequest.newBuilder()
-            .setParent(Objects.isNull(parent) ? null : parent.toString())
+            .setParent(parent == null ? null : parent.toString())
             .setFilter(filter)
             .build();
     return listAnnotatedDatasets(request);
@@ -889,7 +880,7 @@ public class DataLabelingServiceClient implements BackgroundResource {
       DatasetName parent, HumanAnnotationConfig basicConfig, LabelImageRequest.Feature feature) {
     LabelImageRequest request =
         LabelImageRequest.newBuilder()
-            .setParent(Objects.isNull(parent) ? null : parent.toString())
+            .setParent(parent == null ? null : parent.toString())
             .setBasicConfig(basicConfig)
             .setFeature(feature)
             .build();
@@ -969,7 +960,7 @@ public class DataLabelingServiceClient implements BackgroundResource {
       DatasetName parent, HumanAnnotationConfig basicConfig, LabelVideoRequest.Feature feature) {
     LabelVideoRequest request =
         LabelVideoRequest.newBuilder()
-            .setParent(Objects.isNull(parent) ? null : parent.toString())
+            .setParent(parent == null ? null : parent.toString())
             .setBasicConfig(basicConfig)
             .setFeature(feature)
             .build();
@@ -1049,7 +1040,7 @@ public class DataLabelingServiceClient implements BackgroundResource {
       DatasetName parent, HumanAnnotationConfig basicConfig, LabelTextRequest.Feature feature) {
     LabelTextRequest request =
         LabelTextRequest.newBuilder()
-            .setParent(Objects.isNull(parent) ? null : parent.toString())
+            .setParent(parent == null ? null : parent.toString())
             .setBasicConfig(basicConfig)
             .setFeature(feature)
             .build();
@@ -1129,7 +1120,7 @@ public class DataLabelingServiceClient implements BackgroundResource {
   public final Example getExample(ExampleName name, String filter) {
     GetExampleRequest request =
         GetExampleRequest.newBuilder()
-            .setName(Objects.isNull(name) ? null : name.toString())
+            .setName(name == null ? null : name.toString())
             .setFilter(filter)
             .build();
     return getExample(request);
@@ -1187,7 +1178,7 @@ public class DataLabelingServiceClient implements BackgroundResource {
   public final ListExamplesPagedResponse listExamples(AnnotatedDatasetName parent, String filter) {
     ListExamplesRequest request =
         ListExamplesRequest.newBuilder()
-            .setParent(Objects.isNull(parent) ? null : parent.toString())
+            .setParent(parent == null ? null : parent.toString())
             .setFilter(filter)
             .build();
     return listExamples(request);
@@ -1255,7 +1246,7 @@ public class DataLabelingServiceClient implements BackgroundResource {
       ProjectName parent, AnnotationSpecSet annotationSpecSet) {
     CreateAnnotationSpecSetRequest request =
         CreateAnnotationSpecSetRequest.newBuilder()
-            .setParent(Objects.isNull(parent) ? null : parent.toString())
+            .setParent(parent == null ? null : parent.toString())
             .setAnnotationSpecSet(annotationSpecSet)
             .build();
     return createAnnotationSpecSet(request);
@@ -1314,7 +1305,7 @@ public class DataLabelingServiceClient implements BackgroundResource {
   public final AnnotationSpecSet getAnnotationSpecSet(AnnotationSpecSetName name) {
     GetAnnotationSpecSetRequest request =
         GetAnnotationSpecSetRequest.newBuilder()
-            .setName(Objects.isNull(name) ? null : name.toString())
+            .setName(name == null ? null : name.toString())
             .build();
     return getAnnotationSpecSet(request);
   }
@@ -1367,7 +1358,7 @@ public class DataLabelingServiceClient implements BackgroundResource {
       ProjectName parent, String filter) {
     ListAnnotationSpecSetsRequest request =
         ListAnnotationSpecSetsRequest.newBuilder()
-            .setParent(Objects.isNull(parent) ? null : parent.toString())
+            .setParent(parent == null ? null : parent.toString())
             .setFilter(filter)
             .build();
     return listAnnotationSpecSets(request);
@@ -1433,7 +1424,7 @@ public class DataLabelingServiceClient implements BackgroundResource {
   public final void deleteAnnotationSpecSet(AnnotationSpecSetName name) {
     DeleteAnnotationSpecSetRequest request =
         DeleteAnnotationSpecSetRequest.newBuilder()
-            .setName(Objects.isNull(name) ? null : name.toString())
+            .setName(name == null ? null : name.toString())
             .build();
     deleteAnnotationSpecSet(request);
   }
@@ -1486,7 +1477,7 @@ public class DataLabelingServiceClient implements BackgroundResource {
       ProjectName parent, Instruction instruction) {
     CreateInstructionRequest request =
         CreateInstructionRequest.newBuilder()
-            .setParent(Objects.isNull(parent) ? null : parent.toString())
+            .setParent(parent == null ? null : parent.toString())
             .setInstruction(instruction)
             .build();
     return createInstructionAsync(request);
@@ -1550,9 +1541,7 @@ public class DataLabelingServiceClient implements BackgroundResource {
    */
   public final Instruction getInstruction(InstructionName name) {
     GetInstructionRequest request =
-        GetInstructionRequest.newBuilder()
-            .setName(Objects.isNull(name) ? null : name.toString())
-            .build();
+        GetInstructionRequest.newBuilder().setName(name == null ? null : name.toString()).build();
     return getInstruction(request);
   }
 
@@ -1601,7 +1590,7 @@ public class DataLabelingServiceClient implements BackgroundResource {
   public final ListInstructionsPagedResponse listInstructions(ProjectName parent, String filter) {
     ListInstructionsRequest request =
         ListInstructionsRequest.newBuilder()
-            .setParent(Objects.isNull(parent) ? null : parent.toString())
+            .setParent(parent == null ? null : parent.toString())
             .setFilter(filter)
             .build();
     return listInstructions(request);
@@ -1665,7 +1654,7 @@ public class DataLabelingServiceClient implements BackgroundResource {
   public final void deleteInstruction(InstructionName name) {
     DeleteInstructionRequest request =
         DeleteInstructionRequest.newBuilder()
-            .setName(Objects.isNull(name) ? null : name.toString())
+            .setName(name == null ? null : name.toString())
             .build();
     deleteInstruction(request);
   }
@@ -1715,9 +1704,7 @@ public class DataLabelingServiceClient implements BackgroundResource {
    */
   public final Evaluation getEvaluation(EvaluationName name) {
     GetEvaluationRequest request =
-        GetEvaluationRequest.newBuilder()
-            .setName(Objects.isNull(name) ? null : name.toString())
-            .build();
+        GetEvaluationRequest.newBuilder().setName(name == null ? null : name.toString()).build();
     return getEvaluation(request);
   }
 
@@ -1802,7 +1789,7 @@ public class DataLabelingServiceClient implements BackgroundResource {
       EvaluationName parent, String filter) {
     SearchEvaluationsRequest request =
         SearchEvaluationsRequest.newBuilder()
-            .setParent(Objects.isNull(parent) ? null : parent.toString())
+            .setParent(parent == null ? null : parent.toString())
             .setFilter(filter)
             .build();
     return searchEvaluations(request);
@@ -1902,7 +1889,7 @@ public class DataLabelingServiceClient implements BackgroundResource {
       EvaluationName parent) {
     SearchExampleComparisonsRequest request =
         SearchExampleComparisonsRequest.newBuilder()
-            .setParent(Objects.isNull(parent) ? null : parent.toString())
+            .setParent(parent == null ? null : parent.toString())
             .build();
     return searchExampleComparisons(request);
   }
@@ -1976,7 +1963,7 @@ public class DataLabelingServiceClient implements BackgroundResource {
   public final EvaluationJob createEvaluationJob(ProjectName parent, EvaluationJob job) {
     CreateEvaluationJobRequest request =
         CreateEvaluationJobRequest.newBuilder()
-            .setParent(Objects.isNull(parent) ? null : parent.toString())
+            .setParent(parent == null ? null : parent.toString())
             .setJob(job)
             .build();
     return createEvaluationJob(request);
@@ -2091,9 +2078,7 @@ public class DataLabelingServiceClient implements BackgroundResource {
    */
   public final EvaluationJob getEvaluationJob(EvaluationJobName name) {
     GetEvaluationJobRequest request =
-        GetEvaluationJobRequest.newBuilder()
-            .setName(Objects.isNull(name) ? null : name.toString())
-            .build();
+        GetEvaluationJobRequest.newBuilder().setName(name == null ? null : name.toString()).build();
     return getEvaluationJob(request);
   }
 
@@ -2143,7 +2128,7 @@ public class DataLabelingServiceClient implements BackgroundResource {
   public final void pauseEvaluationJob(EvaluationJobName name) {
     PauseEvaluationJobRequest request =
         PauseEvaluationJobRequest.newBuilder()
-            .setName(Objects.isNull(name) ? null : name.toString())
+            .setName(name == null ? null : name.toString())
             .build();
     pauseEvaluationJob(request);
   }
@@ -2198,7 +2183,7 @@ public class DataLabelingServiceClient implements BackgroundResource {
   public final void resumeEvaluationJob(EvaluationJobName name) {
     ResumeEvaluationJobRequest request =
         ResumeEvaluationJobRequest.newBuilder()
-            .setName(Objects.isNull(name) ? null : name.toString())
+            .setName(name == null ? null : name.toString())
             .build();
     resumeEvaluationJob(request);
   }
@@ -2252,7 +2237,7 @@ public class DataLabelingServiceClient implements BackgroundResource {
   public final void deleteEvaluationJob(EvaluationJobName name) {
     DeleteEvaluationJobRequest request =
         DeleteEvaluationJobRequest.newBuilder()
-            .setName(Objects.isNull(name) ? null : name.toString())
+            .setName(name == null ? null : name.toString())
             .build();
     deleteEvaluationJob(request);
   }
@@ -2313,7 +2298,7 @@ public class DataLabelingServiceClient implements BackgroundResource {
       ProjectName parent, String filter) {
     ListEvaluationJobsRequest request =
         ListEvaluationJobsRequest.newBuilder()
-            .setParent(Objects.isNull(parent) ? null : parent.toString())
+            .setParent(parent == null ? null : parent.toString())
             .setFilter(filter)
             .build();
     return listEvaluationJobs(request);

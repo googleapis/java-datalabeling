@@ -117,7 +117,6 @@ import com.google.longrunning.Operation;
 import com.google.protobuf.Empty;
 import java.io.IOException;
 import java.util.List;
-import java.util.Objects;
 import javax.annotation.Generated;
 import org.threeten.bp.Duration;
 
@@ -272,7 +271,7 @@ public class DataLabelingServiceStubSettings extends StubSettings<DataLabelingSe
 
             @Override
             public Iterable<Dataset> extractResources(ListDatasetsResponse payload) {
-              return Objects.isNull(payload.getDatasetsList())
+              return payload.getDatasetsList() == null
                   ? ImmutableList.<Dataset>of()
                   : payload.getDatasetsList();
             }
@@ -308,7 +307,7 @@ public class DataLabelingServiceStubSettings extends StubSettings<DataLabelingSe
 
             @Override
             public Iterable<DataItem> extractResources(ListDataItemsResponse payload) {
-              return Objects.isNull(payload.getDataItemsList())
+              return payload.getDataItemsList() == null
                   ? ImmutableList.<DataItem>of()
                   : payload.getDataItemsList();
             }
@@ -349,7 +348,7 @@ public class DataLabelingServiceStubSettings extends StubSettings<DataLabelingSe
             @Override
             public Iterable<AnnotatedDataset> extractResources(
                 ListAnnotatedDatasetsResponse payload) {
-              return Objects.isNull(payload.getAnnotatedDatasetsList())
+              return payload.getAnnotatedDatasetsList() == null
                   ? ImmutableList.<AnnotatedDataset>of()
                   : payload.getAnnotatedDatasetsList();
             }
@@ -385,7 +384,7 @@ public class DataLabelingServiceStubSettings extends StubSettings<DataLabelingSe
 
             @Override
             public Iterable<Example> extractResources(ListExamplesResponse payload) {
-              return Objects.isNull(payload.getExamplesList())
+              return payload.getExamplesList() == null
                   ? ImmutableList.<Example>of()
                   : payload.getExamplesList();
             }
@@ -428,7 +427,7 @@ public class DataLabelingServiceStubSettings extends StubSettings<DataLabelingSe
             @Override
             public Iterable<AnnotationSpecSet> extractResources(
                 ListAnnotationSpecSetsResponse payload) {
-              return Objects.isNull(payload.getAnnotationSpecSetsList())
+              return payload.getAnnotationSpecSetsList() == null
                   ? ImmutableList.<AnnotationSpecSet>of()
                   : payload.getAnnotationSpecSetsList();
             }
@@ -468,7 +467,7 @@ public class DataLabelingServiceStubSettings extends StubSettings<DataLabelingSe
 
             @Override
             public Iterable<Instruction> extractResources(ListInstructionsResponse payload) {
-              return Objects.isNull(payload.getInstructionsList())
+              return payload.getInstructionsList() == null
                   ? ImmutableList.<Instruction>of()
                   : payload.getInstructionsList();
             }
@@ -508,7 +507,7 @@ public class DataLabelingServiceStubSettings extends StubSettings<DataLabelingSe
 
             @Override
             public Iterable<Evaluation> extractResources(SearchEvaluationsResponse payload) {
-              return Objects.isNull(payload.getEvaluationsList())
+              return payload.getEvaluationsList() == null
                   ? ImmutableList.<Evaluation>of()
                   : payload.getEvaluationsList();
             }
@@ -557,7 +556,7 @@ public class DataLabelingServiceStubSettings extends StubSettings<DataLabelingSe
             @Override
             public Iterable<SearchExampleComparisonsResponse.ExampleComparison> extractResources(
                 SearchExampleComparisonsResponse payload) {
-              return Objects.isNull(payload.getExampleComparisonsList())
+              return payload.getExampleComparisonsList() == null
                   ? ImmutableList.<SearchExampleComparisonsResponse.ExampleComparison>of()
                   : payload.getExampleComparisonsList();
             }
@@ -597,7 +596,7 @@ public class DataLabelingServiceStubSettings extends StubSettings<DataLabelingSe
 
             @Override
             public Iterable<EvaluationJob> extractResources(ListEvaluationJobsResponse payload) {
-              return Objects.isNull(payload.getEvaluationJobsList())
+              return payload.getEvaluationJobsList() == null
                   ? ImmutableList.<EvaluationJob>of()
                   : payload.getEvaluationJobsList();
             }
