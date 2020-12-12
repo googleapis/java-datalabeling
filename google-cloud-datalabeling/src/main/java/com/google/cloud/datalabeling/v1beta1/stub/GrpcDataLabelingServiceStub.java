@@ -569,11 +569,21 @@ public class GrpcDataLabelingServiceStub extends DataLabelingServiceStub {
         DataLabelingServiceStubSettings.newBuilder().build(), clientContext, callableFactory);
   }
 
+  /**
+   * Constructs an instance of GrpcDataLabelingServiceStub, using the given settings. This is
+   * protected so that it is easy to make a subclass, but otherwise, the static factory methods
+   * should be preferred.
+   */
   protected GrpcDataLabelingServiceStub(
       DataLabelingServiceStubSettings settings, ClientContext clientContext) throws IOException {
     this(settings, clientContext, new GrpcDataLabelingServiceCallableFactory());
   }
 
+  /**
+   * Constructs an instance of GrpcDataLabelingServiceStub, using the given settings. This is
+   * protected so that it is easy to make a subclass, but otherwise, the static factory methods
+   * should be preferred.
+   */
   protected GrpcDataLabelingServiceStub(
       DataLabelingServiceStubSettings settings,
       ClientContext clientContext,
