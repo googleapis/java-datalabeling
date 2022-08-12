@@ -120,7 +120,7 @@ public class ITSystemTest {
     DataLabelingServiceClient.ListDatasetsPagedResponse pagedListResponse =
         client.listDatasets(PARENT, filter);
     List<Dataset> resources = Lists.newArrayList(pagedListResponse.iterateAll());
-    // This filter ensures that other datasets in the project do not interfere.
+    // This removal ensures that other integration tests on the same GCP project do not interfere.
     resources.removeIf(dataset -> !dataset.getName().split("/")[3].equals(dataSetId));
 
     assertEquals(1, resources.size());
@@ -140,6 +140,11 @@ public class ITSystemTest {
     DataLabelingServiceClient.ListAnnotationSpecSetsPagedResponse pagedListResponse =
         client.listAnnotationSpecSets(PARENT, filter);
     List<AnnotationSpecSet> resources = Lists.newArrayList(pagedListResponse.iterateAll());
+    // This removal ensures that other integration tests on the same GCP project do not interfere.
+    resources.removeIf(
+        annotationSpecSet ->
+            !annotationSpecSet.getName().split("/")[3].equals(annotationSpecSetId));
+
     assertEquals(1, resources.size());
   }
 }
