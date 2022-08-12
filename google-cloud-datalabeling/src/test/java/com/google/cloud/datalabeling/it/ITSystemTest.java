@@ -119,6 +119,12 @@ public class ITSystemTest {
     DataLabelingServiceClient.ListDatasetsPagedResponse pagedListResponse =
         client.listDatasets(PARENT, filter);
     List<Dataset> resources = Lists.newArrayList(pagedListResponse.iterateAll());
+
+    System.out.println("Dataset returned ("+resources.size()+"):");
+    for (Dataset resource : resources) {
+      System.out.println(resource);
+    }
+
     assertEquals(1, resources.size());
   }
 
