@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.google.cloud.datalabeling.v1beta1.it;
+package com.google.cloud.datalabeling.it;
 
 import static org.junit.Assert.assertEquals;
 
@@ -38,6 +38,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 public class ITSystemTest {
+
   private static DataLabelingServiceClient client;
   private static String dataSetId;
   private static String annotationSpecSetId;
@@ -97,11 +98,15 @@ public class ITSystemTest {
       client.deleteAnnotationSpecSet(annotationSpecSetName);
       LOGGER.info("AnnotationSpecSet deleted successfully.");
     }
-    if (dataSetId != null) {
-      String dataSet = DatasetName.format(PROJECT_ID, dataSetId);
-      client.deleteDataset(dataSet);
-      LOGGER.info("Dataset deleted successfully.");
+
+    DataLabelingServiceClient.ListDatasetsPagedResponse pagedListResponse =
+        client.listDatasets(PARENT, "");
+    for (Dataset dataset : pagedListResponse.iterateAll()) {
+      String datasetId = dataset.getName().split("/")[3];
+      client.deleteDataset(datasetId);
+      LOGGER.info("Dataset " + datasetId + " deleted successfully.");
     }
+
     client.close();
   }
 
@@ -119,11 +124,8 @@ public class ITSystemTest {
     DataLabelingServiceClient.ListDatasetsPagedResponse pagedListResponse =
         client.listDatasets(PARENT, filter);
     List<Dataset> resources = Lists.newArrayList(pagedListResponse.iterateAll());
-
-    System.out.println("Dataset returned (" + resources.size() + "):");
-    for (Dataset resource : resources) {
-      System.out.println(resource);
-    }
+    // This filter ensures that other datasets in the project do not interfere.
+    resources.removeIf(dataset -> !dataset.getName().split("/")[3].equals(dataSetId));
 
     assertEquals(1, resources.size());
   }
