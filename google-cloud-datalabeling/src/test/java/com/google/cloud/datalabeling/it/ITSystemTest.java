@@ -120,7 +120,7 @@ public class ITSystemTest {
         client.listDatasets(PARENT, filter);
     List<Dataset> resources = Lists.newArrayList(pagedListResponse.iterateAll());
 
-    System.out.println("Dataset returned ("+resources.size()+"):");
+    System.out.println("Dataset returned (" + resources.size() + "):");
     for (Dataset resource : resources) {
       System.out.println(resource);
     }
