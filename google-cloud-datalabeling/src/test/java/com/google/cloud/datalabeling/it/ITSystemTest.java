@@ -98,15 +98,11 @@ public class ITSystemTest {
       client.deleteAnnotationSpecSet(annotationSpecSetName);
       LOGGER.info("AnnotationSpecSet deleted successfully.");
     }
-
-    DataLabelingServiceClient.ListDatasetsPagedResponse pagedListResponse =
-        client.listDatasets(PARENT, "");
-    for (Dataset dataset : pagedListResponse.iterateAll()) {
-      String datasetId = dataset.getName().split("/")[3];
-      client.deleteDataset(datasetId);
-      LOGGER.info("Dataset " + datasetId + " deleted successfully.");
+    if (dataSetId != null) {
+      String dataSet = DatasetName.format(PROJECT_ID, dataSetId);
+      client.deleteDataset(dataSet);
+      LOGGER.info("Dataset deleted successfully.");
     }
-
     client.close();
   }
 
