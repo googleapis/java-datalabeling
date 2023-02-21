@@ -59,20 +59,20 @@ If you are using Maven without BOM, add this to your dependencies:
 If you are using Gradle 5.x or later, add this to your dependencies:
 
 ```Groovy
-implementation platform('com.google.cloud:libraries-bom:26.1.4')
+implementation platform('com.google.cloud:libraries-bom:26.8.0')
 
 implementation 'com.google.cloud:google-cloud-datalabeling'
 ```
 If you are using Gradle without BOM, add this to your dependencies:
 
 ```Groovy
-implementation 'com.google.cloud:google-cloud-datalabeling:0.125.0'
+implementation 'com.google.cloud:google-cloud-datalabeling:0.131.0'
 ```
 
 If you are using SBT, add this to your dependencies:
 
 ```Scala
-libraryDependencies += "com.google.cloud" % "google-cloud-datalabeling" % "0.125.0"
+libraryDependencies += "com.google.cloud" % "google-cloud-datalabeling" % "0.131.0"
 ```
 
 ## Authentication
